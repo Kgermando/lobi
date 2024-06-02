@@ -7,7 +7,7 @@ import (
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/logger"
 	"github.com/gofiber/template/django/v3"
-	"github.com/kgermando/lobi/database"
+	// "github.com/kgermando/lobi/database"
 	"github.com/kgermando/lobi/router"
 )
 
@@ -23,7 +23,7 @@ func getPort() string {
 }
 
 func main() {
-	database.ConnectDB()
+	// database.ConnectDB()
 
 	engine := django.New("./templates", ".html")
 
