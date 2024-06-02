@@ -1,0 +1,302 @@
+/*----------------------------------------*/
+/*  2.17 - Sidebar Styles CSS
+/*----------------------------------------*/
+.sidebar-wrap{
+    max-width: 342px;
+    width: 100%;
+    & .sidebar{
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+    @media #{$large-mobile, $tablet-device}{
+        max-width: 100%;
+	}
+}
+.sidebar {
+    margin-bottom: 60px;
+    @media #{$desktop-device} {
+        margin-bottom: 50px;
+	}
+    @media #{$tablet-device} {
+        margin-bottom: 40px;
+	}
+    @media #{$large-mobile}{
+		margin-bottom: 30px;
+	}
+    &-wrap{
+        @media #{$large-mobile, $tablet-device}{
+            margin-top: 60px;
+        }
+    }
+    & .sidebar-title {
+        padding: 24px 30px;
+        border-radius: 5px;
+        font-size: 21px;
+        font-weight: 700;
+        color: #343c55;
+        display: flex;
+        background: rgba(50, 47, 179, 0.13);
+        background: linear-gradient(-45deg, rgba(91, 207, 242, 0.13) 0%, rgba(65, 125, 210, 0.13) 50%, rgba(50, 47, 179, 0.13) 100%);
+        text-transform: capitalize;
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        & i {
+            font-size: 14px;
+            color: #4fcbf1;
+            margin-left: 10px;
+        }
+    }
+    &.sidebar-help{
+        background-color: $primary;
+    }
+    &-search{
+        position: relative;
+        max-width: 100%;
+        overflow: hidden;
+        border-radius: 5px;
+        &-btn{
+            position: absolute;
+            right: 0px;
+            top: 50%;
+            transform: translateY(-50%);
+            border: 0px;
+            background-color: white;
+            color: $white;
+            font-size: 18px;
+            padding: 20px;
+            border-radius: 0;
+            &::before{
+                border-radius: 0;
+            }
+        }
+    }
+    &-input{
+        font-size: 14px;
+        width: 100%;
+        border: none;
+        height: 60px;
+        border-radius: 5px;
+        padding-right: 50px;
+        padding-left: 20px;
+        background-color: #ffffff;
+        color: $dark;
+        border: 1px solid #bdbdcc;
+        &::placeholder{
+            color: #717788;
+            font-size: 16px;
+            font-family: $opensans;
+        }
+    }
+    &-blog{
+        & li {
+            display: flex;
+            margin-bottom: 30px;
+            &:last-child{
+                margin-bottom: 0px;
+            }
+            & .image{
+                flex: 1 0 85px;
+                margin-right: 20px;    
+                @media #{$tablet-device} {
+                    flex:none;
+                }
+                @media #{$large-mobile} {
+                    flex:none;
+                }
+                & img {
+                    width: 100%;
+                }
+            }
+            & .content{
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                & .title{
+                    font-size: 18px;
+                    font-weight: 700;
+                    color: $dark;
+                    &:hover{
+                        color: $primary;
+                    }
+                }
+                & .date{
+                    font-size: 14px;
+                    font-family: $opensans;
+                    color: #717788;
+                    line-height: 1;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    &-category{
+        & li {
+            margin-bottom: 8px;
+            &:last-child{
+                margin-bottom: 0;
+                padding-bottom: 0;
+                border-bottom: 0px;
+            }
+            & a {
+                font-weight: 700;
+                color: $dark;
+                font-size: 18px;
+                &:hover{
+                    color: $primary;
+                    padding-left: 5px;
+                }
+                & i {
+                    color: #6c63ff;
+                    font-size: 14px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    &-tags{
+        & a{
+            font-size: 14px;
+            font-family: $opensans;
+            padding: 10px 20px;
+            border-radius: 30px;
+            border: 1px solid #d1dbe5;
+            color: #54545f;
+            display: inline-flex;
+            margin-bottom: 6px;
+            margin-right: 4px;
+            line-height: 1;
+            &:last-child{
+                margin-bottom: 0px;
+            }
+            &:hover, &.active{
+                background-color: $secondary;
+                color: White;
+                border: 1px solid $secondary;
+            }
+        }
+    }
+    &-instagram{
+        & li {
+            display: inline-flex;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            position: relative;
+
+            & a {
+                display: block;
+                position: relative;
+                &::after{
+                    background: $primary;
+                    content: "";
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    position: absolute;
+                    opacity: 0;
+                    visibility: hidden;
+                    border-radius: 5px;
+                    transition: .5s;
+                }
+                & .add-action{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -20%);
+                    opacity: 0;
+                    visibility: hidden;
+                    z-index: 1;
+                    transition: .5s;
+                    & i {
+                        font-size: 24px;
+                        color: white;
+                        vertical-align: middle;
+                        line-height: 1;
+                    }
+                }
+
+                &:hover{
+                    &::after{
+                        opacity: .5;
+                        visibility: visible;
+                        transition: .5s;
+                    }
+                    & .add-action{
+                        transform: translate(-50%, -50%);
+                        opacity: 1;
+                        visibility: visible;
+                        transition: .5s;
+                    }
+                }
+            }
+        }
+    }
+    &-feature{
+        &-content{
+            display: flex;
+            flex-direction: column;
+            margin-top: 15px;
+            & .date {
+                margin-bottom: 3px;
+            }
+            & .title {
+                font-size: 21px;
+                font-weight: 700;
+                color: $dark;
+                &:hover{
+                    color: $primary;
+                }
+            }
+        }
+    }
+    &-banner{
+        padding: 60px 50px;
+        border-radius: 5px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        overflow: hidden;
+        &:after{
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;	
+            background: #322fb3;
+            background: linear-gradient(-55deg, #5BCFF2 0%, #417DD2 50%, #322fb3 100%);
+            opacity: .8;
+        }
+        &-subtitle{
+            color: #4fcbf1;
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: 700;
+            position: relative;
+            z-index: 1;
+        }
+        &-title {
+            font-weight: 700;
+            font-size: 36px;
+            color: $white;
+            position: relative;
+            z-index: 1;
+        }
+        & p {
+            position: relative;
+            z-index: 1;
+            color: $white;
+        }
+        & .btn-style-two{
+            padding: 16px 38px;
+            display: inline-block;
+            font-size: 16px;
+            font-family: $poppins;
+            position: relative;
+            z-index: 1;
+        }
+    }
+}

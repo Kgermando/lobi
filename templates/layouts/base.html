@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="author" content="KGERMANDO">
+    <meta name="description" content="lobi">
+    <meta name="description" content="{{ Title }}">
+
+    <title>LOBI | {{ Title }} </title>
+
+    <meta name="robots" content="noindex, follow"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+
+    {% include 'layouts/css.html' %}
+</head>
+
+<body>
+
+    <!-- Header -->
+    {% include "partials/header.html" %}
+
+    {% block content %} {% endblock content %}
+
+    <!-- Footer Section Start -->
+    {% include "partials/footer.html" %}
+    <!-- Footer Section End -->
+
+    <!-- Scroll Top Start -->
+    <a href="#" class="scroll-top show" id="scroll-top">
+        <i class="arrow-top fas fa-angle-double-up"></i>
+        <i class="arrow-bottom fas fa-angle-double-up"></i>
+    </a>
+    <!-- Scroll Top End -->
+
+    <!-- JS Vendor, Plugins & Activation Script Files -->
+
+    {% include 'layouts/js.html' %}
+
+</body>
+
+</html>

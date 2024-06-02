@@ -1,0 +1,204 @@
+/*----------------------------------------*/
+/*  2.8 - Qualit Styles CSS
+/*----------------------------------------*/
+.quality{
+    position: relative;
+    &-images{
+        margin-right: 70px;
+        height: 650px;
+        position: relative;
+        @media #{$desktop-device} {
+            margin-right: 20px;
+        }
+        @media #{$tablet-device, $large-mobile} {
+            max-width: 600px;
+            width: 100%;
+            margin: 0 auto 60px;
+        }
+        @media #{$large-mobile} {
+            margin: 0 auto 40px;
+        }
+        @media #{$extra-small-mobile} {
+            height: 400px;
+        }
+        &-one{
+            position: relative;
+            @media #{$extra-small-mobile} {
+                width: 70%;
+            }
+        }
+        &-two{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index: 2;
+            @media #{$extra-small-mobile} {
+                width: 50%;
+            }
+        }
+        &-thumb{
+            position: absolute;
+            width: 98px;
+            height: 98px;
+            border-radius: 13px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 50px;
+            left: -40px;
+            @media #{$desktop-device, $large-mobile} {
+                left: -20px;
+            }
+            @media #{$small-mobile} {
+                left: 10px;
+            }
+            @media #{$extra-small-mobile} {
+                width: 70px;
+                height: 70px;
+            }
+        }
+    }
+    & .heading-one{
+        margin-bottom: 50px;
+        
+        @media #{$large-mobile} {
+            margin-bottom: 40px;
+        }
+        @media #{$extra-small-mobile} {
+            margin-bottom: 30px;
+        }
+        &-title{
+            margin: 10px 0 36px;
+            @media #{$large-mobile} {
+                margin: 10px 0 20px;
+            }
+        }
+    }
+    & .shape{
+        @media #{$large-mobile, $tablet-device} {
+            display: none;
+        }
+        &.shape-1{
+            position: absolute;
+            top: 3%;
+            left: 3%;
+            animation: moveupdown1 4s infinite linear;
+            
+        }
+        &.shape-2{            
+            position: absolute;
+            top: 16%;
+            left: 10%;
+            animation: moveupdown1 3s infinite linear;
+            z-index: -1;
+        }
+        &.shape-3{
+            position: absolute;
+            top: -5%;
+            right: 0%;
+            animation: moveupdown1 5s infinite linear;
+        }
+        &.shape-4{
+            position: absolute;
+            top: 12%;
+            right: 8%;
+            animation: zoom1 3s infinite linear;
+            z-index: -1;
+        }
+        &.shape-5{
+            position: absolute;
+            bottom: 12%;
+            right: 0%;
+            animation: moveupdown1 3s infinite linear;
+            z-index: -1;
+        }
+    }
+}
+
+.faq{
+
+    &-accordion-button{
+        font-size: 24px;
+        color: $dark;
+        font-weight: 700;
+        padding: 0px 30px 0 50px;
+        @media #{$large-mobile} {
+            padding: 0px 0px 0 20px;
+            font-size: 20px;
+        }
+        &:not(.collapsed){
+            color: $dark;
+            background-color: #ffffff;
+            box-shadow: none;
+            &::after{
+                background-image: none;
+                transform: translateY(-50%) translateX(-50%);
+            }
+        }
+
+        &::after{
+            background-image: none;
+            position: absolute;
+            top: 50%;
+            left: 1%;
+            display: block;
+            width: 20px;
+            height: 4px;
+            content: "";
+            transition: all 0.4s ease 0s;
+            transform: translateY(-50%) translateX(-50%) rotate(90deg);
+            background-color: #363273;
+            @media #{$large-mobile} {
+                width: 10px;
+                height: 2px;
+            }
+        }
+        &::before{
+            position: absolute;
+            top: 50%;
+            left: 1%;
+            display: block;
+            width: 20px;
+            height: 4px;
+            content: "";
+            transition: all 0.4s ease 0s;
+            transform: translateY(-50%) translateX(-50%);
+            background-color: #363273;
+            @media #{$large-mobile} {
+                width: 10px;
+                height: 2px;
+            }
+        }
+        &:focus{
+            box-shadow: none;
+        }
+    }
+    &-accordion-item{
+        border: 0px;
+        margin-bottom: 30px;
+        @media #{$large-mobile} {
+            margin-bottom: 20px;
+        }
+    }
+
+    &-accordion-collapse{
+        & .accordion-body{
+            padding: 20px 20px 10px 50px;
+            @media #{$large-mobile} {
+                padding: 20px 0px 10px 20px;
+                font-size: 16px;
+            }
+        }
+    }
+
+    & .accordion{
+        &-item{
+            &:last-child{
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+.about-accordion{
+    background-color: $white;
+}

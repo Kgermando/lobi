@@ -1,0 +1,416 @@
+/* =============================
+    2.5 - Progress Style
+================================ */
+.progress-section{
+    position: relative;
+    &-content{
+        background-image: url(../images/progress/progress-bg.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        padding: 90px;
+        margin-top: 44px;
+        border-radius: 15px;
+        @media #{$desktop-device} {
+            padding: 50px;
+        }
+        @media #{$tablet-device, $large-mobile} {
+            padding: 50px;
+            margin-top: 0;
+        }
+        @media #{$small-mobile} {
+            padding: 30px;
+            margin-top: 0;
+        }
+        & .heading-one-title{
+            color: $white;
+            margin: 12px 0 30px;
+        }
+        & p {
+            color: $white;
+        }
+    }
+    & .shape{
+        @media #{$large-mobile, $tablet-device} {
+            display: none;
+        }
+        &.shape-1{
+            position: absolute;
+            top: 5%;
+            left: 15%;
+            animation: circle1 4s infinite linear;
+        }
+        &.shape-2{            
+            position: absolute;
+            top: 5%;
+            left: 2%;
+            animation: animshape1 3s infinite linear;
+
+            & img {
+                transform: rotate(20deg);
+            }
+        }        
+        &.shape-3{            
+            position: absolute;
+            top: 22%;
+            left: 8%;
+            animation: zoom1 3s infinite linear;
+            z-index: -1;
+        }
+    }
+}
+.radial-progress-single {
+    text-align: center;
+    margin-top: 40px;
+
+    .circle-info {
+        padding-top: 20px;
+        text-align: center;
+        @media #{$small-mobile} {
+            padding: 0 0 0 20px;
+            max-width: 250px;
+            margin: 10px auto 0;
+        }
+        .title {
+            font-size: 18px;
+            font-weight: 700;
+            color: $white;
+            margin-bottom: 15px;
+        }
+    }
+}
+.radial-progress {
+    position: relative;
+    .circle-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        span {
+            &.count {
+                font-family: $opensans;
+                font-size: 30px;
+                line-height: 1;
+                font-weight: 700;
+                color: $secondary;
+                position: relative;
+            }
+        }
+    }
+}
+.progress-image{
+    margin: 0px 10px 0 -110px;
+    position: absolute;
+    width: 54%;
+    z-index: -1;
+    @media only screen and (min-width: 1701px) and (max-width: 1750px) {
+        width: 53%;
+    }
+    @media only screen and (min-width: 1550px) and (max-width: 1700px) {
+        width: 46%;
+    }
+    
+    @media only screen and (min-width: 1400px) and (max-width: 1549px) {
+        width: 40%;
+    }
+    
+    @media #{$laptop-device, $desktop-device} {
+        width: 35%;
+    }
+    @media #{$tablet-device, $large-mobile} {
+        & img{
+            width: 100%;
+        }
+        width: 100%;
+        margin: 0px 0 -40px;
+        position: relative;
+    }
+}
+.custom-margin{
+    @media #{$small-mobile} {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+}
+/* -----Progress Two Style----- */
+.progress-two{
+    position: relative;
+    &-images{
+        & .image{
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 5;
+            @media only screen and (min-width: 1550px) and (max-width: 1700px) {
+                & img {
+                    width: 90%;
+                }
+            }
+            @media #{$big-device} {                
+                & img {
+                    width: 80%;
+                }
+            }
+            @media #{$laptop-device} {                
+                & img {
+                    width: 70%;
+                }
+            }
+            @media #{$desktop-device} {        
+                top: 50px;        
+                & img {
+                    width: 58%;
+                }
+            }
+            &-bg{
+                position: absolute;
+                left: 0;
+                top: 156px;
+                @media only screen and (min-width: 1550px) and (max-width: 1700px) {
+                    & img {
+                        width: 90%;
+                    }
+                }
+                @media #{$big-device} {                
+                    & img {
+                        width: 80%;
+                    }
+                }
+                @media #{$laptop-device} {                
+                    & img {
+                        width: 70%;
+                    }
+                }
+                @media #{$desktop-device} {                
+                    & img {
+                        width: 58%;
+                    }
+                }
+                @media #{$tablet-device} {
+                    position: relative;
+                    margin: 0 0 60px -36px;
+                }
+                @media #{$large-mobile} {
+                    position: relative;
+                    top: 130px;
+                    margin: 0 0 40px -30px;
+                }
+                @media #{$extra-small-mobile} {   
+                    margin: 0 0 20px -12px;
+                    top: 80px;
+                }
+            }
+        }
+        & .sheild{
+            box-shadow: 15px 11px 90px 0px rgba(0, 0, 0, 0.07);
+            padding: 25px 30px;
+            background: $white;
+            border-radius: 7px;
+            position: absolute;
+            bottom: -46px;
+            left: 22%;
+            z-index: 6;
+            animation: moveupdown1 6s infinite linear !important;
+            @media only screen and (min-width: 1550px) and (max-width: 1700px) {
+                bottom: 0px;
+            }
+            @media #{$big-device} {
+                left: 24%;
+                bottom: 10px;
+            }
+            @media #{$laptop-device} {
+                bottom: 25px;
+                left: 24%;
+            }
+            @media #{$desktop-device} {
+                bottom: 80px;
+                left: 24%;
+                padding: 15px 20px;
+            }
+            @media #{$tablet-device} {        
+                top: 44%;
+                left: 50%;
+                bottom: auto;
+            }
+            @media #{$large-mobile} {
+                top: 40%;
+                left: 50%;
+                bottom: auto;
+                padding: 15px 20px;
+            }
+            @media #{$small-mobile} {
+                top: 36%;
+            }
+            @media #{$extra-small-mobile} {        
+                top: 28%;
+                padding: 10px 15px;
+            }
+        }
+        & .handshake{
+            padding: 35px;
+            background: linear-gradient(-45deg, #5BCFF2 0%, #417DD2 50%, #322fb3 100%);
+            border-radius: 7px;
+            position: absolute;
+            top: 25%;
+            left: 30%;
+            z-index: 6;
+            animation: moveupdown1 4s infinite linear !important;
+            @media #{$laptop-device, $desktop-device} {
+                padding: 25px;
+                top: 18%;
+            }
+            @media #{$tablet-device} {        
+                top: 12%;
+                left: 70%;
+            }
+            @media #{$large-mobile} {        
+                top: 12%;
+                left: 70%;
+                padding: 20px;
+            }
+            @media #{$extra-small-mobile} {        
+                top: 6%;
+                left: 60%;
+                padding: 15px;
+            }
+        }
+    }
+
+    &-wrapper{
+        overflow: hidden;
+        margin-top: 130px;
+        @media only screen and (min-width: 1550px) and (max-width: 1700px) {
+            margin-top: 100px;
+        }
+        @media #{$big-device} {
+            margin-top: 50px;
+        }
+        @media #{$laptop-device, $desktop-device} {
+            margin-top: 0px;
+        }
+        @media #{$desktop-device} {                
+            & img {
+                width: 58%;
+            }
+        }
+        @media #{$extra-small-mobile} {   
+            margin-top: 90px;
+        }
+    }
+    & .heading-one{
+        padding-bottom: 15px;
+        &-title{
+            margin: 10px 0 30px;
+        }
+        @media #{$large-mobile} {
+            padding-bottom: 0px;
+            &-title{
+                margin: 0px 0 20px;
+            }
+        }
+    }
+    & .progress{
+        overflow: inherit;
+        height: 5px;
+        background: #dce0ed;
+        display: flex;
+        justify-content: space-between;
+        &-bar{
+            position: relative;
+            top: -5px;
+            height: 3px;
+            background: #47bfe7;
+        }
+        &-title{
+            font-size: 21px;
+            font-family: $poppins;
+            font-weight: 700;
+            color: #343c55;
+            margin: 35px 0 20px;
+            @media #{$large-mobile} {
+                margin: 25px 0 15px;
+                font-size: 18px;
+            }
+        }
+        &-number{
+            font-size: 18px;
+            font-family: $poppins;
+            font-weight: 500;
+            color: #2d3757;
+            position: relative;
+            top: -50px;
+            @media #{$large-mobile} {
+                top: -40px;
+                font-size: 16px;
+            }
+        }
+        &-button{
+            display: flex;
+            margin-top: 60px;
+            & .btn-style-one{
+                padding: 22px 58px;
+            }
+            @media #{$large-mobile} {
+                margin-top: 40px;
+                & .btn-style-one{
+                    padding: 18px 45px;
+                }
+            }
+            @media #{$small-mobile} {
+                margin-top: 40px;
+                & .btn-style-one{
+                    padding: 18px 30px;
+                }
+            }
+        }
+    }
+
+    & .shape{
+        height: 100%;
+        width: 100%;
+        position: absolute !important;
+        @media #{$tablet-device, $large-mobile} {
+            display: none;
+        }
+        & .shape1{
+            position: absolute;
+            left: 21%;
+            top: 110px;
+            z-index: -1;
+            @media #{$big-device} {
+                top: 80px;
+            }
+            @media #{$laptop-device} {
+                top: 60px;
+                left: 20%;
+            }
+            @media #{$desktop-device} {
+                top: 60px;
+                left: 20%;
+                img{
+                    width: 80%;
+                }
+            }
+        }
+        & .shape2{
+            position: absolute;
+            right: 10%;
+            bottom: -8%;
+        }
+        & .shape3{
+            position: absolute;
+            right: 2%;
+            top: 81%;
+            z-index: 3;            
+            @media only screen and (min-width: 1550px) and (max-width: 1650px) {
+                right: 1%;
+                top: 80%;
+            }
+            @media #{$big-device, $laptop-device, $desktop-device} {
+                right: 0%;
+                top: 80%;
+            }
+        }
+    }
+}

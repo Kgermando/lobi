@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="KGERMANDO">
+    <title>Dashboard</title>
+
+    {% include "layouts/admin-css.html" %}
+</head>
+
+<body>
+    {% include "layouts/admin-header.html" %}
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="sidebar border border-right col-md-3 col-lg-2 p-0 bg-body-tertiary">
+                <div class="offcanvas-md offcanvas-end bg-body-tertiary" tabindex="-1" id="sidebarMenu"
+                    aria-labelledby="sidebarMenuLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="sidebarMenuLabel">CaMarket admin</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                            data-bs-target="#sidebarMenu" aria-label="Close"></button>
+                    </div>
+                    {% include "layouts/admin-side.html" %}
+                </div>
+            </div>
+
+            {% block content %} {% endblock content %}
+
+        </div>
+    </div>
+
+    
+    <!-- JS -->
+    {% block ajax %} {% endblock ajax %}
+    {% include "layouts/admin-js.html" %}
+</body>
+
+</html>

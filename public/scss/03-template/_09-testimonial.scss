@@ -1,0 +1,870 @@
+/*----------------------------------------*/
+/*  2.9 - Testimonial Styles CSS
+/*----------------------------------------*/
+.testimonial-one{
+    position: relative;
+    &-inner{
+        display: flex;
+        @media #{$extra-small-mobile} {
+            flex-direction: column;
+        }
+    }
+    &-image{
+        position: absolute;
+        margin-top: 120px;
+        margin-left: -12px;
+        width: 36%;
+        @media #{$laptop-device} {
+            margin-top: 50px;
+        }
+        @media #{$desktop-device} {
+            margin-top: 30px;
+        }
+        @media #{$tablet-device} {
+            margin-top: 0px;
+            width:40%;
+        }
+        @media #{$large-mobile} {
+            margin-top: 0px;
+            width: 46%;
+        }
+        @media #{$large-mobile} {
+            margin-top: 0px;
+            width: 52%;
+        }
+        @media #{$extra-small-mobile} {
+            margin-top: 0px;
+            width: 63%;
+        }
+    }
+    &-thumb{
+        width: 20%;
+        height: 370px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 13px;
+        position: absolute;
+        top: 0;
+        right: 140px;
+        @media only screen and (min-width: 1550px) and (max-width: 1680px) {
+            right: 100px;
+        }
+        @media #{$laptop-device} {
+            height: 260px;
+            width: 260px;
+            right: 12px;
+        }
+        @media #{$desktop-device} {
+            height: 200px;
+            width: 200px;
+            right: 12px;
+            & img{
+                width: 70%;
+            }
+        }
+        @media #{$tablet-device} {
+            height: 120px;
+            width: 120px;
+            right: 12px;
+            & img{
+                width: 50%;
+            }
+        }
+        @media #{$large-mobile} {
+            height: 100px;
+            width: 100px;
+            right: 12px;
+            top: 100px;
+            & img{
+                width: 40%;
+            }
+        }
+        @media #{$small-mobile} {
+            height: 80px;
+            width: 80px;
+            & img{
+                width: 40%;
+            }
+        }
+        @media #{$extra-small-mobile} {
+            height: 80px;
+            width: 80px;
+            right: 12px;
+            top: 18%;
+            & img{
+                width: 40%;
+            }
+        }
+    }
+    &-content{
+        background-color: $bg-one;
+        padding: 120px 160px;
+        position: relative;
+        right: 0;
+        width: 74%;
+        margin-top: 240px;
+        margin-left: auto;
+        margin-right: -12px;
+        @media #{$laptop-device} {
+            padding: 120px 100px;
+            margin-top: 180px;
+        }
+        @media #{$desktop-device} {
+            padding: 120px 80px 100px;
+            margin-top: 130px;
+        }
+        @media #{$tablet-device} {
+            padding: 90px 70px;
+            width: 80%;
+            margin-top: 100px;
+        }
+        @media #{$large-mobile} {
+            padding: 50px 50px;
+            width: 80%;
+            margin-top: 170px;
+        }
+        @media #{$small-mobile} {
+            width: 100%;
+        }
+        @media #{$extra-small-mobile} {
+            padding: 42px 20px;
+            width: 100%;
+            margin-top: 170px;
+            margin-right: auto;
+        }
+    }
+    & .testimonialone{
+        overflow: hidden;
+        position: relative;
+        padding-bottom: 80px;
+        
+        @media #{$large-mobile} {
+            padding-bottom: 60px;
+        }
+        &-single{
+            max-width: 870px;
+            width: 100%;
+        }
+        &-content{
+            display: flex;
+            align-items: center;
+        }
+        &-text{
+            color: #717788;
+            font-size: 30px;
+            font-style: italic;
+            line-height: 1.4;
+            margin: 70px 0 60px;
+            @media #{$laptop-device, $desktop-device} {
+                margin: 40px 0 50px;
+            }
+            @media #{$desktop-device} {
+                font-size: 24px;
+            }
+            @media #{$tablet-device} {
+                font-size: 22px;
+                margin: 30px 0 40px;
+            }
+            @media #{$large-mobile} {
+                font-size: 20px;
+                margin: 20px 0 30px;
+            }
+        }
+        &-info{
+            display: flex;
+            flex-direction: column;
+            margin-left: 25px;
+            @media #{$large-mobile} {
+                margin-left: 15px;
+            }
+            & .name{
+                font-size: 24px;
+                font-weight: 700;
+                color: $dark;
+                @media #{$large-mobile} {
+                    font-size: 20px;
+                }
+            }
+            & .designation{
+                color: #717788;
+                margin-top: 10px;
+                @media #{$large-mobile} {
+                    margin-top: 5px;
+                }
+            }
+        }
+        &-pagination{
+            text-align: start;
+            bottom: 0;
+        }
+    }
+    & .shape{
+        @media #{$large-mobile, $tablet-device} {
+            display: none;
+        }
+        &.shape-1{
+            position: absolute;
+            top: -15%;
+            left: 4%;
+            animation: moveupdown1 4s infinite linear;
+        }
+        &.shape-2{            
+            position: absolute;
+            top: -3%;
+            left: 14%;
+            animation: circle1 3s infinite linear;
+        }
+    }
+}
+/* Testimonial Two */
+.testimonial-two{
+    position: relative;
+    & .heading-one{
+        text-align: center;
+        margin: 0 auto 80px;
+        @media #{$tablet-device} {
+            margin: 0 auto 60px;
+        }
+        @media #{$large-mobile} {
+            margin: 0 auto 30px;
+        }
+    }
+    &-single{
+        box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.07);
+        border-radius: 13px;
+        padding: 0 50px 50px;
+
+        & .quote{
+            padding: 35px 0px;
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            width: 90px;
+            margin: 0 auto 40px;
+            border-radius: 0 0 7px 7px;
+        }
+        & .text {
+            font-style: italic;
+            font-size: 21px;
+            line-height: 1.42;
+            margin-bottom: 40px;
+            @media #{$large-mobile} {
+                font-size: 18px;
+            }
+        }
+
+        & .user{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+
+            &-meta{
+                display: flex;
+                flex-direction: column;
+
+                & .name{
+                    font-size: 21px;
+                    font-weight: 700;
+                    font-family: $poppins;
+                    margin-bottom: 5px;
+                    color: $dark;
+                }
+            }
+        }
+    }
+
+    & .testimonialtwo{
+        overflow: hidden;
+        margin: 0 -15px;
+        & .swiper-slide{
+            padding: 15px 15px;
+        }
+        @media #{$large-mobile} {
+            margin: 0 0;
+        }
+    }
+
+
+    & .testimonial-two-arrow{
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 9;
+        width: 100%;
+        & .swiper-arrow-long{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            & .prev-button{
+                left: -8.5%;
+                @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+                    left: -2%;
+                }
+                @media #{$desktop-device, $tablet-device, $large-mobile} {
+                    left: -1%;
+                }
+                @media #{$small-mobile} {
+                    left: 0%;
+                }
+            }
+            & .next-button{
+                right: -8.5%;
+                left: auto;
+                @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+                    right: -2%;
+                    left: auto;
+                }
+                @media #{$desktop-device, $tablet-device, $large-mobile} {
+                    right: -1%;
+                    left: auto;
+                }
+                @media #{$small-mobile} {
+                    right: 0%;
+                    left: auto;
+                }
+            }
+        }
+    }
+
+    
+    & .shape{
+        position: absolute;
+        
+        @media #{$large-mobile, $tablet-device} {
+            display: none;
+        }
+        &.shape-1{
+            top: -140px;
+            right: 135px;
+            @media #{$large-mobile, $tablet-device} {
+                display: none;
+            }
+            
+            @media #{$laptop-device, $desktop-device} {
+                right: 20px;
+                top: -80px;
+            }
+        }
+    }
+}
+
+.swiper-arrow-long{
+    & .prev-button{
+        & .arrow-2{
+            opacity: 0;
+            transition: .3s;
+            transform: rotate(180deg);
+            position: absolute;
+            top: 43%;
+            @media #{$desktop-device} {
+                top: 40%;
+            }
+            @media #{$tablet-device, $large-mobile} {
+                top: 40%;
+            }
+        }
+    }
+    & .next-button{
+        & .arrow-1{
+            transform: rotate(-180deg);
+        }
+        & .arrow-2{
+            opacity: 0;
+            transition: .3s;
+            position: absolute;
+            top: 39%;
+            left: 33%;
+            @media #{$desktop-device} {
+                top: 36%;
+                left: 28%;
+            }
+            @media #{$tablet-device, $large-mobile} {
+                top: 36%;
+                left: 28%;
+            }
+        }
+    }
+
+    & .prev-button, & .next-button{
+        height: 60px;
+        width: 60px;
+        background-color: #ffffff;
+        border: 1px solid $secondary;
+        border-radius: 100%;
+        transition: .3s;
+        position: relative;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media #{$desktop-device} {
+            height: 50px;
+            width: 50px;
+        }
+        @media #{$tablet-device, $large-mobile} {
+            height: 45px;
+            width: 45px;
+        }
+        &:hover{
+            background-color: $secondary;
+            box-shadow: 15px 11px 48px 0px rgba(0, 0, 0, 0.13);
+            & .arrow-2{
+                opacity: 1;
+                transition: .3s;
+            }
+            & .arrow-1{
+                opacity: 0;
+                transition: .3s;
+            }
+        }
+    }
+}
+
+/* Testimonial Three Style */
+.testimonial-three{
+    position: relative;
+    & .heading-one{
+        max-width: 600px;
+        margin-bottom: 60px;
+
+        &-subtitle{
+            display: block;
+            margin-bottom: 10px;
+        }
+        @media #{$tablet-device} {
+            max-width: 500px;
+            margin-bottom: 60px;
+        }
+        @media #{$large-mobile} {
+            max-width: 400px;
+            margin-bottom: 30px;
+        }
+    }
+    & .vertical-testimonial{
+        height: 666px;
+        & .swiper-slide{
+            padding: 15px;
+        }
+        @media #{$desktop-device} {
+            height: 715px;
+        }
+        @media #{$large-mobile} {
+            height: 620px;
+        }
+        @media #{$small-mobile} {
+            height: 520px;
+        }
+        @media #{$extra-small-mobile} {
+            height: 340px;
+        }
+    }
+    &-single-content{
+        padding: 50px;
+        border-radius: 13px;
+        background: $white;
+        box-shadow: 0px 3px 22px 0px rgba(0, 0, 0, 0.07);
+        max-width: 570px;
+        @media #{$tablet-device} {
+            max-width: 640px;
+        }
+        @media #{$large-mobile} {
+            right: 0px;
+        }
+        @media #{$small-mobile} {
+            padding: 25px;
+        }
+        & .text{
+            font-family: $opensans;
+            font-style: italic;
+            font-size: 21px;
+            color: #717788;
+            @media #{$large-mobile} {
+                font-size: 17px;
+            }
+        }
+        & .bottom{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            & .client-description{
+                display: flex;
+                align-items: center;
+                column-gap: 30px;
+
+                @media #{$extra-small-mobile} {
+                    column-gap: 15px;
+                }
+                & .name{
+                    font-family: $poppins;
+                    font-weight: 700;
+                    font-size: 21px;
+                    @media #{$small-mobile} {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+
+    & .vertical-pagination{
+        & .swiper-pagination{
+            height: 330px;
+            background: #d6edf7;
+            border-radius: 5px;
+            width: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            right: 15px;
+            & .swiper-pagination-bullet{
+                background: #d6edf7;
+                &-active{
+                    background: #47bfe7;
+                    width: 6px;
+                    height: 56px;
+                    border-radius: 5px;
+                }
+            }
+            @media #{$tablet-device} {
+                right: 0px;
+            }
+            @media #{$large-mobile} {
+                right: 0px;
+            }
+            @media #{$extra-small-mobile} {
+                height: 230px;
+            }
+        }
+    }
+
+    &-images{
+        position: relative;
+        height: 100%;
+        @media #{$tablet-device} {
+            margin-bottom: 30px;
+        }
+        @media #{$large-mobile} {
+            margin-bottom: 30px;
+        }
+        & .image1{
+            position: absolute;
+            top: -35px;
+            right: 60px;
+            & img {
+                animation: zoom1 2s infinite linear;
+            }
+            @media #{$big-device, $laptop-device} {
+                right: 130px;
+            }
+            @media #{$desktop-device} {
+                right: 130px;
+            }
+            @media #{$tablet-device} {
+                position: relative;
+                top: 0px;
+                margin-left: 56%;
+                right: auto;
+            }
+            @media #{$large-mobile} {
+                position: relative;
+                top: 0px;
+                margin-left: 56%;
+                right: auto;
+            }
+        }
+        & .image2{
+            position: absolute;
+            top: 100px;
+            right: 30%;
+            & img {
+                animation: zoom1 5s infinite linear;
+            }
+            @media #{$big-device, $laptop-device} {
+                right: 46%;
+            }
+            @media #{$desktop-device} {
+                right: 46%;
+            }
+            @media #{$tablet-device} {
+                position: relative;
+                top: 25px;
+                margin-left: 18%;
+                right: auto;
+            }
+            @media #{$large-mobile} {
+                position: relative;
+                top: 25px;
+                margin-left: 18%;
+                right: auto;
+            }
+            @media #{$small-mobile} {
+                & img {
+                    width: 50%;
+                }
+            }
+            @media #{$extra-small-mobile} {
+                top: -40px;
+                margin-left: 5%;
+                & img {
+                    width: 40%;
+                }
+            }
+        }
+        & .image3{
+            position: absolute;
+            top: 145px;
+            right: -110px;
+            & img {
+                animation: zoom1 3s infinite linear;
+            }
+            @media #{$big-device} {
+                right: -30px;
+            }
+            @media #{$laptop-device} {
+                right: 20px;
+            }
+            @media #{$desktop-device} {
+                right: 20px;
+            }
+            @media #{$tablet-device} {
+                position: relative;
+                margin-top: -180px;
+                margin-left: 67%;
+                top: auto;
+                right: auto;
+            }
+            @media #{$large-mobile} {
+                position: relative;
+                margin-top: -180px;
+                margin-left: 67%;
+                top: auto;
+                right: auto;
+            }
+            @media #{$extra-small-mobile} {
+                margin-top: -100px;
+                margin-left: 60%;
+                & img {
+                    width: 65%;
+                }
+            }
+        }
+        & .image4{
+            position: absolute;
+            top: 330px;
+            right: -304px;
+            & img {
+                animation: zoom1 3s infinite linear;
+            }
+            @media only screen and (min-width: 1650px) and (max-width: 1800px) {
+                right: -230px;
+            }
+            @media only screen and (min-width: 1550px) and (max-width: 1649px) {
+                top: 310px;
+                right: -180px;
+            }
+            @media #{$big-device} {
+                top: 300px;
+                right: -100px;
+            }
+            @media #{$laptop-device} {
+                top: 300px;
+                right: -30px;
+            }
+            @media #{$desktop-device} {
+                top: 300px;
+                right: 0px;
+            }
+            @media #{$tablet-device} {
+                position: relative;
+                margin-top: 85px;
+                margin-left: 79%;
+                top: auto;
+                right: auto;
+            }
+            @media #{$large-mobile} {
+                position: relative;
+                margin-top: 85px;
+                margin-left: 79%;
+                top: auto;
+                right: auto;
+            }
+            @media #{$extra-small-mobile} {
+                margin-top: 100px;
+                margin-left: 74%;
+                bottom: 80px;
+                & img {
+                    width: 68%;
+                }
+            }
+        }
+        & .image5{
+            position: absolute;
+            bottom: 70px;
+            left: 90px;
+            & img {
+                animation: zoom1 3s infinite linear;
+            }
+            @media #{$big-device, $laptop-device} {
+                left: 10px;
+            }
+            @media #{$desktop-device} {
+                left: 0px;
+            }
+            @media #{$tablet-device} {
+                position: relative;
+                bottom: 70px;
+                margin-left: 1%;
+                left: auto;
+            }
+            @media #{$large-mobile} {
+                position: relative;
+                bottom: 70px;
+                margin-left: 1%;
+                left: auto;
+            }
+            @media #{$extra-small-mobile} {
+                bottom: 120px;
+                & img {
+                    width: 25%;
+                }
+            }
+        }
+        & .image6{
+            position: absolute;
+            bottom: 30px;
+            right: -64px;
+            & img {
+                animation: zoom1 6s infinite linear;
+            }
+            @media #{$big-device, $laptop-device} {
+                right: 45px;
+            }
+            @media #{$desktop-device} {
+                right: 15px;
+                bottom: 0px;
+            }
+            @media #{$tablet-device} {
+                position: relative;
+                margin-top: -200px;
+                margin-left: 39%;
+                bottom: auto;
+                right: auto;
+            }
+            @media #{$large-mobile} {
+                position: relative;
+                margin-top: -200px;
+                margin-left: 39%;
+                bottom: auto;
+                right: auto;
+            }
+            @media #{$small-mobile} {
+                & img {
+                    width: 60%;
+                }
+            }
+            @media #{$extra-small-mobile} {
+                margin-top: -220px;
+                margin-left: 33%;
+                & img {
+                    width: 50%;
+                }
+            }
+        }
+    }
+
+    & .shape{
+        height: 100%;
+        width: 100%;
+        position: absolute !important;
+        @media #{$tablet-device, $large-mobile} {
+            display: none;
+        }
+        & .shape1{
+            position: absolute;
+            left: 0%;
+            top: 20px;
+            z-index: 2;
+
+            @media #{$desktop-device, $laptop-device} {
+                img {
+                    width: 85%;
+                }
+            }
+        }
+        & .shape2{
+            position: absolute;
+            left: 0%;
+            top: 20%;
+            z-index: 1;
+        }
+        & .shape3{
+            position: absolute;
+            left: 55px;
+            top: 46%;
+            z-index: 1;
+        }
+        & .shape4{
+            position: absolute;
+            right: 0%;
+            top: -80px;
+            @media #{$desktop-device} {
+                right: 2%;
+                top: 4%;
+            }
+        }
+        & .shape5{
+            position: absolute;
+            right: 0%;
+            top: 60px;
+        }
+        & .shape6{
+            position: absolute;
+            right: 33%;
+            top: 23%;
+        }
+        & .shape7{
+            position: absolute;
+            right: 5.5%;
+            top: 15%;
+        }
+        & .shape8{
+            position: absolute;
+            right: 2%;
+            top: 42%;
+        }
+        & .shape9{
+            position: absolute;
+            right: 24%;
+            top: 61%;
+            @media only screen and (min-width: 1550px) and (max-width: 1649px) {
+                right: 20%;
+                top: 63%;
+            }
+            @media #{$big-device, $laptop-device} {
+                right: 20%;
+                top: 63%;
+            }
+            @media #{$desktop-device} {
+                right: 20%;
+                top: 63%;
+            }
+        }
+        & .shape10{
+            position: absolute;
+            right: 39%;
+            top: 67%;
+        }
+        & .shape11{
+            position: absolute;
+            right: 5.5%;
+            bottom: -7%;
+        }
+    }
+}

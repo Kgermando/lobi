@@ -1,0 +1,199 @@
+/*----------------------------------------*/
+/*  2.10 - Brand Styles CSS
+/*----------------------------------------*/
+.brand-style{
+    .brand-before {
+        display: block;
+        transition: all 0.4s;
+      }
+      .brand-after {
+        top: 150%;
+        position: absolute;
+        display: block;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        transition: all 0.4s;
+      }
+      .swiper-slide {
+        &:hover {
+          .brand-before {
+            transform: translateY(-100%);
+          }
+    
+          .brand-after {
+            top: 0%;
+          }
+        }
+    }
+}
+
+/* Brand Two Style */ 
+.brand-style-two{
+  background-color: #f2f5fb;
+  border-radius: 10px;
+  padding: 110px;
+  position: relative;
+  @media #{$desktop-device}{
+    padding: 80px;
+  }
+  @media #{$tablet-device} {
+    padding: 60px;
+  }
+  @media #{$large-mobile} {
+    padding: 60px;
+  }
+  @media #{$extra-small-mobile} {
+    padding: 40px 30px;
+  }
+
+  & .shape-one{
+    position: absolute;
+    bottom: -105px;
+    right: -105px;
+    z-index: -1;
+    @media #{$laptop-device}{
+      right: -35px;
+    }
+    @media #{$desktop-device}{
+      right: -25px;
+    }
+    @media #{$tablet-device, $large-mobile}{
+      right: -30px;
+    }
+    @media #{$small-mobile}{
+      right: 0px;
+      bottom: -40px;
+      width: 35%;
+    }
+  }
+}
+
+/* Brand Three Style */
+.brand-three{
+  margin-top: 70px;
+  position: relative;
+
+  & .shape{
+    @media #{$large-mobile, $tablet-device} {
+        display: none;
+    }
+    &.shape-1{
+        position: absolute;
+        top: -190%;
+        left: 7%;
+        animation: moveupdown1 4s infinite linear;
+        @media only screen and (min-width: 1400px) and (max-width: 1549px) {
+          left: 3%;
+          top: -240%;
+        }
+        @media only screen and (min-width: 140px) and (max-width: 1399px) {
+          display: none;
+        }
+    }
+    &.shape-2{            
+        position: absolute;
+        top: 10%;
+        left: 6%;
+        animation: moveupdown1 3s infinite linear;
+        @media only screen and (min-width: 1400px) and (max-width: 1549px) {
+          left: 2%;
+        }
+        @media only screen and (min-width: 140px) and (max-width: 1399px) {
+          display: none;
+        }
+    }
+    &.shape-3{
+        position: absolute;
+        top: -89%;
+        left: 13%;
+        animation: circle1 5s infinite linear;
+        z-index: -1;
+        @media only screen and (min-width: 1400px) and (max-width: 1549px) {
+          left: 10%;
+          top: -153%;
+        }
+        @media only screen and (min-width: 140px) and (max-width: 1399px) {
+          display: none;
+        }
+    }
+  }
+}
+
+/* Brand Four Style */
+.brand-four{
+  background-image: url(../images/brand/brand-three/brand-bg.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 120px 0 395px;
+  margin-bottom: -1px;
+  position: relative;
+  @media #{$desktop-device, $tablet-device} {
+      padding: 80px 0 355px;
+  }
+  @media #{$large-mobile} {
+      padding: 60px 0 335px;
+  }
+  & .shape {
+    position: absolute;
+    &.shape-1{
+      top: -100px;
+      left: 90px;
+      & img {
+        animation: zoom1 3s infinite linear;
+        @media #{$desktop-device, $tablet-device} {
+          width: 60%;
+        }
+      }
+      @media #{$desktop-device, $tablet-device} {
+          left: 20px;
+          top: -60px;
+      }
+      @media #{$large-mobile} {
+          display: none;
+      }
+    }
+    &.shape-2{
+      bottom: 100px;
+      right: 310px;
+      & img{
+        animation: zoom1 3s infinite linear;
+      }
+      @media #{$large-mobile} {
+          display: none;
+      }
+    }
+  }
+}
+
+/* Brand Five Style */
+.brand-five{
+  margin: 100px 0 120px;
+	@media #{$desktop-device} {
+		margin: 90px 0 110px;
+	}
+	@media #{$tablet-device} {
+		margin: 60px 0 80px;
+	}
+	@media #{$large-mobile} {
+		margin: 40px 0 60px;
+	}
+  & .heading-one{
+    max-width: 500px;
+    margin: 0 auto 90px;	
+    @media #{$desktop-device} {
+      margin: 0 auto 80px;	
+    }
+    @media #{$tablet-device} {
+      margin: 0 auto 60px;	
+    }
+    @media #{$large-mobile} {
+      margin: 0 auto 40px;	
+    }
+    &-subtitle {
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+}

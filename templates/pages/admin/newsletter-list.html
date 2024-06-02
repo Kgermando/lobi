@@ -1,0 +1,37 @@
+{% extends 'layouts/base-admin.html' %}
+
+{% block content %}
+    
+<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 my-3">
+    <div class="d-flex justify-content-between">
+        <h2>Liste des newsletters</h2> 
+    </div>
+    <div class="table-responsive small">
+        <table class="table table-striped table-sm">
+            <thead>
+                <tr>
+                    <th scope="col">Email</th>
+                    <th scope="col">Supprimer</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for newsletter in newsletterList %}
+                <tr>
+                    <td>{{ newsletter.Email }}</td>
+                    <td>
+                        <form action="/web/admin/newsletter-delete" method="post">
+                            <input type="text" id="id" name="id" value="{{ newsletter.ID }}" hidden> 
+                            <button type="submit" class="btn btn-danger w-10 mb-3">Supprimer</button>
+                        </form>
+                    </td>
+                </tr>
+                {% empty %}
+                <p>Aucune newsletter ici...</p>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</main>
+
+{% endblock content %}
+    

@@ -1,0 +1,70 @@
+// Font Family
+$poppins: 'Poppins', sans-serif;
+$opensans: 'Open Sans', sans-serif;
+
+// Responsive Variables
+$extraBig-device: "only screen and (min-width: 1550px)";
+$big-device: "only screen and (min-width: 1400px) and (max-width: 1549px)";
+$laptop-device: "only screen and (min-width: 1200px) and (max-width: 1399px)";
+$desktop-device: "only screen and (min-width: 992px) and (max-width: 1199px)";
+$tablet-device: "only screen and (min-width: 768px) and (max-width: 991px)";
+$large-mobile: "only screen and (max-width: 767px)";
+$small-mobile: "only screen and (max-width: 575px)";
+$extra-small-mobile: "only screen and (max-width: 479px)";
+
+//===============================
+// Bootstrap Variables Overright
+//===============================
+
+// Color
+$primary: #322fb3;
+$secondary: #4fcbf1;
+$light: #def6fe;
+$white: #ffffff;
+$dark: #343c55;
+$gray-100: #717788;
+$bg-one: #f2fbfe;
+
+// theme colors map
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "light": $light,
+  "white": $white,
+  "dark": $dark,
+  "bg-one": $bg-one,
+  "gray-100": $gray-100,
+);
+
+// Grid breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
+
+// Grid containers
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1200px,
+  xxl: 1320px,
+);
+//
+$grid-gutter-width: 30px;
+
+// Transition
+$transition-base: all 0.5s ease 0s;
+
+// Typography
+$font-family-base: $poppins;
+$font-size-base: 1rem;
+$line-height-base: 1.75;
+//
+$headings-font-family: $poppins;
+$headings-font-weight: 600;
+$headings-line-height: 1.2;

@@ -1,0 +1,140 @@
+/*----------------------------------------*/
+/*  1.2 Button Styles CSS
+/*----------------------------------------*/
+  
+.btn-style-one{
+	background: #322fb3;
+	background:  linear-gradient(-45deg, #5BCFF2 20%, #417DD2 50%, #322fb3 100%);
+    border: 0px;
+	border-radius: 7px;
+    // font-family: $opensans;
+    text-transform: uppercase;
+    font-weight: 400;
+	font-size: 16px;
+    color: $white;
+
+	padding: 20px 45px;
+	line-height: 1;
+	position: relative;
+
+	@media #{$large-mobile} {
+		padding: 16px 30px;
+	}
+	@media #{$extra-small-mobile} {
+		padding: 15px 20px;
+		font-size: 14px;
+	}
+	&:focus{
+		box-shadow: none;
+	}
+	&::before{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: rgb(113,83,217);
+		background: linear-gradient(-45deg, #322fb3 20%, #417DD2 50%, #4fcbf1 100%);
+		opacity: 0;
+		transition: .5s;
+		border-radius: 7px;
+		z-index: 1;
+	}
+	&:hover{
+		& span{
+			color: #ffffff;
+		}
+		&::before{
+			opacity: 1;
+			transition: .5s;
+		}
+	}
+	& span{
+		position: relative;
+		z-index: 3;
+		color: #ffffff;
+	}
+}
+
+.btn-style-two {
+	background: $secondary;
+    border: 0px;
+	border-radius: 7px;
+    // font-family: $opensans;
+    text-transform: uppercase;
+    font-weight: 400;
+	font-size: 16px;
+    color: $white;
+	padding: 25px 65px;
+	line-height: 1;
+	position: relative;
+	@media #{$large-mobile} {
+		padding: 16px 30px;
+	}
+	@media #{$extra-small-mobile} {
+		padding: 15px 20px;
+		font-size: 14px;
+	}
+	&:focus {
+		box-shadow: none;
+	}
+	&:hover {
+		color: #ffffff;
+		background-color: $dark;
+	}
+}
+.btn-style-three {
+	background: $primary;
+    border: 0px;
+	border-radius: 7px;
+    font-family: $opensans;
+    text-transform: uppercase;
+    font-weight: 400;
+	font-size: 16px;
+    color: $white;
+	padding: 20px 60px;
+	line-height: 1;
+	position: relative;
+	@media #{$large-mobile} {
+		padding: 16px 30px;
+	}
+	@media #{$extra-small-mobile} {
+		padding: 15px 20px;
+		font-size: 14px;
+	}
+	&:focus {
+		box-shadow: none;
+	}
+	&:hover {
+		color: #ffffff;
+		background-color: $dark;
+	}
+}
+.btn-style-four {
+	background: #4fcbf1;
+    border: 0px;
+    border-radius: 7px;
+    font-family: $poppins;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 18px;
+    color: #ffffff;
+    padding: 21px 65px;
+    line-height: 1;
+    position: relative;
+	@media #{$large-mobile} {
+		padding: 16px 30px;
+	}
+	@media #{$extra-small-mobile} {
+		padding: 15px 20px;
+		font-size: 14px;
+	}
+	&:focus {
+		box-shadow: none;
+	}
+	&:hover {
+		color: #ffffff;
+		background-color: $dark;
+	}
+}

@@ -1,0 +1,90 @@
+/*----------------------------------------*/
+/*  2.14 - Funfact Styles CSS
+/*----------------------------------------*/
+.funfact{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    & .heading-one {
+        &-subtitle{
+            // color: $white;
+        }
+        &-title {
+            color: $white;
+            margin: 5px 0 40px;
+            @media #{$tablet-device, $large-mobile} {
+                margin: 5px 0 30px;
+            }
+        }
+        & p {
+            color: $white;
+        }
+    }
+    & .about-counter{
+        display: flex;
+        justify-content: flex-end;
+        gap: 30px;
+        flex-wrap: wrap;
+        margin-bottom: 0px;
+        @media #{$tablet-device, $large-mobile} {
+            justify-content: flex-start;
+            margin-top: 50px;
+        }
+        @media #{$extra-small-mobile} {
+            gap: 15px;
+            margin-top: 40px;
+        }
+        &-2{
+            padding: 45px 50px 55px;
+            display: flex;
+            flex: 0 0 auto;
+            flex-direction: column;
+            border-radius: 13px;
+            background-color: $secondary;
+            max-width: 230px;
+            width: 100%;
+            @media #{$large-mobile} {
+                max-width: 200px;
+                padding: 30px 30px 38px;
+            }
+            @media #{$extra-small-mobile} {
+                max-width: 160px;
+                padding: 20px 25px 24px;
+            }
+            & .odometer, & .niktext {
+                font-family: $opensans;
+                font-size: 60px;
+                font-weight: 700;
+                color: $white;
+                @media #{$extra-small-mobile} {
+                    font-size: 40px;
+                }
+            }
+            & .niktext{
+                line-height: 1;
+            }
+            & .increment{
+                color: $white;
+                font-size: 26px;
+                position: relative;
+                top: -10px;
+            }
+
+        }
+        &-title{
+            text-transform: uppercase;
+            font-size: 21px;
+            font-weight: 700;
+            color: $white;
+            line-height: 1.5;
+            @media #{$extra-small-mobile} {
+                font-size: 16px;
+            }
+            
+        }
+        & .funfact-inner {
+            display: flex;
+            align-items: center;
+        }
+    }
+}

@@ -1,0 +1,1873 @@
+/* =============================
+    2.2 - Slider Style
+================================ */
+/* Slider One Animation Start */
+.animation-style-01 {
+    & .swiper-slide-active {
+        & .slider-content{
+            & .subtitle{
+                animation-name: fadeInUp;
+                animation-delay: 0.01s;
+                animation-duration: 1.5s;
+                animation-fill-mode: both;
+            }
+            & .title{
+                animation-name: fadeInUp;
+                animation-delay: 0.04s;
+                animation-duration: 1s;
+                animation-fill-mode: both;
+            }
+            .btn-style-two{
+                animation-name: fadeInUp;
+                animation-delay: 0.08s;
+                animation-duration: 1.5s;
+                animation-fill-mode: both;
+            }
+
+        }
+        & .sliderone-social{
+            & li{
+                &:nth-child(1){
+                    animation-name: fadeInUp;
+                    animation-delay: 0.01s;
+                    animation-duration: 1.3s;
+                    animation-fill-mode: both;
+                }
+                &:nth-child(2){
+                    animation-name: fadeInUp;
+                    animation-delay: 0.04s;
+                    animation-duration: 1.3s;
+                    animation-fill-mode: both;
+                }
+                &:nth-child(3){
+                    animation-name: fadeInUp;
+                    animation-delay: 0.06s;
+                    animation-duration: 1.3s;
+                    animation-fill-mode: both;
+                }
+                &:nth-child(4){
+                    animation-name: fadeInUp;
+                    animation-delay: 0.08s;
+                    animation-duration: 1.3s;
+                    animation-fill-mode: both;
+                }
+            }
+        }
+        & .slider-image{
+            &.slide-two-image{
+                animation-name: fadeIn;
+                animation-delay: 0.04s;
+                animation-duration: 1s;
+                animation-fill-mode: both;
+            }
+            & .shape-circle{
+                animation-name: zoomIn;
+                animation-delay: 0.4s;
+                animation-duration: 1s;
+                animation-fill-mode: both;
+            }
+        }
+    }
+}
+
+/* Slider Two Animation Start */
+.animation-style-02 {
+    & .swiper-slide-active {
+        & .heading-one{
+            &-subtitle{
+                animation-name: fadeInUp;
+                animation-delay: 0.01s;
+                animation-duration: 0.7s;
+                animation-fill-mode: both;
+            }
+            &-title{
+                animation-name: fadeInUp;
+                animation-delay: 0.04s;
+                animation-duration: 0.9s;
+                animation-fill-mode: both;
+            }
+            & p {
+                animation-name: fadeInUp;
+                animation-delay: 0.06s;
+                animation-duration: 1.2s;
+                animation-fill-mode: both;
+            }
+            .btn-style-one{
+                animation-name: fadeInUp;
+                animation-delay: 0.08s;
+                animation-duration: 1.5s;
+                animation-fill-mode: both;
+            }
+        }
+        & .slidertwo-leftimg{
+            & .img-one{
+                animation-name: fadeInLeft;
+                animation-delay: 0.01s;
+                animation-duration: 0.7s;
+                animation-fill-mode: both;
+            }
+            & .img-two{
+                animation-name: fadeInLeft;
+                animation-delay: 0.04s;
+                animation-duration: 0.9s;
+                animation-fill-mode: both;
+            }
+        }
+        & .slidertwo-rightimg{
+            & .img-one{
+                animation-name: fadeInRight;
+                animation-delay: 0.01s;
+                animation-duration: 0.7s;
+                animation-fill-mode: both;
+            }
+            & .img-two{
+                animation-name: fadeInRight;
+                animation-delay: 0.04s;
+                animation-duration: 0.9s;
+                animation-fill-mode: both;
+            }
+            & .img-three{
+                animation-name: fadeInRight;
+                animation-delay: 0.04s;
+                animation-duration: 1s;
+                animation-fill-mode: both;
+            }
+        }
+        & .slidertwo-shape1{
+            & .shape-7{
+                & img{
+                    animation-name: fadeInDown;
+                    animation-delay: 0.04s;
+                    animation-duration: 1s;
+                    animation-fill-mode: both;
+                }
+            }
+        }
+        & .slidertwo-shape2{
+            & .shape-6{
+                & img{
+                    animation-name: fadeInLeft;
+                    animation-delay: 0.04s;
+                    animation-duration: 1s;
+                    animation-fill-mode: both;
+                }
+            }
+            & .shape-8{
+                & img{
+                    animation-name: fadeInRight;
+                    animation-delay: 0.04s;
+                    animation-duration: 1s;
+                    animation-fill-mode: both;
+                }
+            }
+        }
+        & .slidertwo-shape3{
+            & .shape-1{
+                & img{
+                    animation-name: fadeInDown;
+                    animation-delay: 0.04s;
+                    animation-duration: 1.3s;
+                    animation-fill-mode: both;
+                }
+            }
+        }
+    }
+}
+/* Slider One Style Start */
+.sliderone {
+    position: relative;
+    margin: 0 -100px;
+    @media only screen and (min-width: 1550px) and (max-width: 1699px) {
+        margin: 0 -80px;
+    }
+    @media only screen and (min-width: 1300px) and (max-width: 1549px) {
+        margin: 0 -30px;
+    }
+	@media only screen and (min-width: 320px) and (max-width: 1299px) {
+        margin: 0;
+	}
+    & .swiper-slide{
+        padding: 0 100px;
+        @media only screen and (min-width: 1550px) and (max-width: 1699px) {
+            padding: 0 80px;
+        }
+        @media only screen and (min-width: 1300px) and (max-width: 1549px) {
+            padding: 0 30px;
+        }
+        @media only screen and (min-width: 320px) and (max-width: 1299px) {
+            padding: 0;
+        }
+    }
+    &-slingle{
+        height: 960px;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        @media only screen and (min-width: 1550px) and (max-width: 1699px) {
+            height: 880px;
+        }
+        @media only screen and (min-width: 1300px) and (max-width: 1549px) {
+            height: 874px;
+        }
+        @media only screen and (min-width: 1200px) and (max-width: 1299px) {
+            height: 870px;
+        }
+        @media only screen and (min-width: 992px) and (max-width: 1199px) {
+            height: 794px;
+        }
+        @media only screen and (min-width: 320px) and (max-width: 991px) {
+        }
+        @media #{$tablet-device} {
+            height: 625px;
+        }
+        @media #{$large-mobile} {
+            height: 550px;
+        }
+        
+        @media #{$small-mobile} {
+            height: 800px;
+        }
+        @media #{$extra-small-mobile} {
+            height: 720px;
+        }
+    }
+    &-content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        @media #{$tablet-device, $large-mobile} {
+            align-items: flex-start;
+            padding-top: 60px;
+        }
+        @media #{$small-mobile} {
+            flex-direction: column;
+            padding-top: 60px;
+        }
+
+        @media #{$extra-small-mobile} {
+            padding-top: 60px;
+        }
+        & .slider-content {
+            flex: 0 0 auto;
+            width: 42%;
+            padding: 0 15px;
+            z-index: 3;
+            @media only screen and (min-width: 1550px) and (max-width: 1699px) {
+                width: 47%;
+            }
+            @media only screen and (min-width: 1300px) and (max-width: 1549px) {
+                width: 50%;
+            }
+            @media only screen and (min-width: 320px) and (max-width: 1299px) {
+                width: 50%;
+            }
+            @media #{$tablet-device, $large-mobile} {
+                width: 60%;
+            }
+            @media #{$small-mobile} {
+                width: 65%;
+            }
+            @media #{$extra-small-mobile} {
+                width: 100%;
+            }
+                    
+            & .subtitle {
+                font-size: 30px;
+                text-transform: uppercase;
+                font-weight: 700;
+                color: $white;
+                display: flex;
+                margin-bottom: 5px;
+                @media #{$desktop-device} {
+                    font-size: 24px;
+                }
+                @media #{$tablet-device} {
+                    font-size: 20px;
+                }
+                @media #{$large-mobile} {
+                    font-size: 18px;
+                }
+                @media #{$small-mobile} {
+                    font-size: 16px;
+                }
+            }
+            & .title {
+                font-size: 72px;
+                font-weight: 700;
+                color: $white;
+                @media #{$desktop-device} {
+                    font-size: 60px;
+                }
+                @media #{$tablet-device} {
+                    font-size: 50px;
+                }
+                @media #{$large-mobile} {
+                    font-size: 40px;
+                }
+                @media #{$small-mobile} {
+                    font-size: 36px;
+                }
+            }
+            & .call {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                bottom: 0px;
+                
+                @media #{$tablet-device} {
+                    position: relative;
+                    margin-top: 50px;
+                }
+                @media #{$large-mobile} {
+                    position: relative;
+                    margin-top: 30px;
+                    bottom: 0px;
+                }
+                & span {
+                    color: $white;
+                    font-weight: 700;
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    
+                    @media #{$tablet-device, $large-mobile} {
+                        font-size: 16px;
+                    }
+                    @media #{$large-mobile} {
+                        font-size: 14px;
+                    }
+                }
+                & a {
+                    color: $white;
+                    font-family: $opensans;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 1;
+                    margin-top: 5px;
+                    @media #{$tablet-device} {
+                        font-size: 20px;
+                    }
+                    @media #{$large-mobile} {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+        & .slider-image{
+            flex: 0 0 auto;
+            width: 50%;
+            padding: 0 15px;
+            position: relative;
+            z-index: 2;
+
+            @media only screen and (min-width: 1550px) and (max-width: 1699px) {
+                width: 47%;
+            }
+            @media only screen and (min-width: 1400px) and (max-width: 1549px) {
+                width: 50%;
+            }
+            @media #{$tablet-device, $large-mobile} {
+                width: 40%;
+            }
+            @media #{$small-mobile} {
+                width: 100%;
+            }
+            &-one {
+                margin-left: -300px;
+                @media #{$tablet-device} {
+                    margin-left: -200px;
+                }
+                @media #{$large-mobile} {
+                    margin-left: -135px;
+                }
+                @media #{$small-mobile} {
+                    margin-left: 0;
+                    margin-top: 30px;
+                }
+            }
+        }
+        & .btn-style-two {
+            margin-top: 40px;
+            display: inline-flex;
+            @media #{$tablet-device} {
+                padding: 20px 40px;
+                margin-top: 30px;
+            }
+            @media #{$large-mobile} {
+                padding: 18px 35px;
+                margin-top: 30px;
+            }
+            &:hover{
+                background-color: $white;
+                color: $dark;
+            }
+        }
+    }
+    & .swiper-pagination {
+        position: absolute;
+        right: 50px !important;
+        left: auto !important;
+        width: 10px !important;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        row-gap: 25px;
+        align-items: center;
+        justify-content: center;
+        @media only screen and (min-width: 1550px) and (max-width: 1699px) {
+            right: 40px !important;
+        }
+        
+        @media only screen and (min-width: 1300px) and (max-width: 1549px) {
+            right: 20px !important;
+        }
+        
+        @media only screen and (min-width: 130px) and (max-width: 1299px) {
+            display: none;
+        }
+        @media #{$tablet-device, $large-mobile} {
+            display: flex;
+            left: 50% !important;
+            transform: translate(-50%, -50%);
+            position: relative;
+            display: flex !important;
+            flex-direction: row;
+            column-gap: 20px;
+            width: 100% !important;
+            bottom: 50px;
+        }       
+        @media #{$tablet-device, $large-mobile} {
+            column-gap: 10px;
+            bottom: 50px;
+        }
+        @media #{$small-mobile} {
+            bottom: 0px;
+        }
+        @media #{$extra-small-mobile} {
+            bottom: 0px;
+        }
+        &-bullet{
+            height: 12px;
+            width: 12px;
+            background: $primary;
+            @media #{$tablet-device} {
+                background: $white;
+            }
+            @media #{$large-mobile} {
+                background: $white;
+                width: 10px;
+                height: 10px;
+            }
+            @media #{$small-mobile} {
+                background: $primary;
+            }
+        }
+        &-bullet-active{
+            position: relative;
+            &::before{
+                content: "";
+                position: absolute;
+                border: 2px solid $secondary;
+                height: 22px;
+                width: 22px;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                border-radius: 100%;
+                @media #{$large-mobile} {
+                    width: 18px;
+                    height: 18px;
+                }
+            }
+        }
+    }
+    & .button-container{
+        position: absolute;
+        bottom: 0px;
+        right: 0;
+    }
+    & .swiper-button {
+        position: relative;
+        left: auto;
+        right: 0;
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 10px;
+        @media #{$tablet-device} {
+            display: none;
+        }
+        &-prev, &-next{
+            height: 60px;
+            width: 60px;
+            background-color: transparent;
+            border: 1px solid $secondary;
+            border-radius: 7px;
+            transition: .3s;
+            position: relative;
+            left: 0;
+            right: 0;
+            &::after{
+                display: none;
+            }
+            @media #{$desktop-device} {
+                height: 50px;
+                width: 50px;
+            }
+            @media #{$tablet-device} {
+                height: 40px;
+                width: 40px;
+            }
+            &:hover{
+                background-color: $secondary;
+                border: 1px solid $secondary;
+                opacity: 1;
+                transition: .3s;
+            }
+        }
+
+        & .prev-arrow-1, & .next-arrow-1, & .prev-arrow-2, & .next-arrow-2{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 9;
+        }
+        & .next-arrow-2 {
+            transform: rotate(180deg) translate(50%, 40%);
+            opacity: 0;
+        }
+        &-next{
+            &:hover{
+                & .next-arrow-1{
+                    opacity: 0;
+                }
+                & .next-arrow-2{
+                    opacity: 1;
+                }
+            }
+        }
+        & .prev-arrow-1 {
+            transform: rotate(-180deg) translate(50%, 40%);
+        }
+        & .prev-arrow-2{
+            opacity: 0;
+        }
+        &-prev{
+            &:hover{
+                & .prev-arrow-1{
+                    opacity: 0;
+                }
+                & .prev-arrow-2{
+                    opacity: 1;
+                }
+            }
+        }
+
+    }
+}
+.sliderbg-1{
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    width: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 960px;
+    @media only screen and (min-width: 1550px) and (max-width: 1699px) {
+        width: 46%;
+        height: 880px;
+    }
+    
+    @media only screen and (min-width: 1400px) and (max-width: 1549px) {
+        width: 41%;
+        height: 874px;
+    }
+    @media only screen and (min-width: 1300px) and (max-width: 1399px) {
+        width: 38%;
+        height: 874px;
+    }
+    @media only screen and (min-width: 1200px) and (max-width: 1299px) {
+        height: 870px;
+    }
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+        height: 794px;
+    }
+	@media only screen and (min-width: 320px) and (max-width: 1299px) {
+        width: 30%;
+	}
+    @media #{$tablet-device} {
+        width: 100%;
+        height: 625px;
+    }
+    @media #{$large-mobile} {
+        height: 550px;
+        width: 100%;
+    }
+    @media #{$small-mobile} {
+        height: 625px;
+    }
+    & .shape{
+        position: absolute;
+        opacity: 0.6;
+    }
+    & .shape-1 {
+        top: 13%;
+        left: 6%;
+        z-index: 1;
+        animation: animshape1 5s infinite linear;
+        @media #{$laptop-device} {
+        }
+        @media #{$desktop-device} {
+        }
+        @media #{$tablet-device} {    
+        }
+        @media #{$large-mobile} {
+            display: none;
+        }
+    }
+    & .shape-2 {
+        top: 19%;
+        left: 74%;
+        z-index: 1;
+        animation: animshape1 6s infinite linear;
+        @media #{$large-mobile} {
+            display: none;
+        }
+    }
+    & .shape-3 {
+        top: 22%;
+        left: 27%;
+        z-index: 1;
+        animation: moveupdown1 3s infinite linear;
+        @media #{$large-mobile} {
+            display: none;
+        }
+    }
+    & .shape-4 {
+        top: 33%;
+        left: 18%;
+        z-index: 1;
+        animation: circle1 2.2s infinite alternate;
+        @media #{$large-mobile} {
+            display: none;
+        }
+    }
+    & .shape-5 {
+        top: 49%;
+        left: 13%;
+        z-index: 1;
+        animation: circle2 2.2s infinite linear;
+        @media #{$large-mobile} {
+            display: none;
+        }
+    }
+    & .shape-6 {
+        top: 52%;
+        left: 28%;
+        z-index: 1;
+        animation: animshape2 5s infinite linear;
+        @media #{$large-mobile} {
+            display: none;
+        }
+    }
+    & .shape-7 {
+        top: 79%;
+        left: 75%;
+        z-index: 1;
+        animation: circle2 2.2s infinite linear;
+        @media #{$large-mobile} {
+            display: none;
+        }
+    }
+    & .shape-8 {
+        top: 71%;
+        left: 69%;
+        z-index: 1;
+        animation: circle1 2.2s infinite alternate;
+        @media #{$large-mobile} {
+            display: none;
+        }
+    }
+    & .shape-9 {
+        top: 92%;
+        left: 9%;
+        z-index: 1;
+        animation: animshape1 5s infinite linear;
+        @media #{$large-mobile} {
+            display: none;
+        }
+    }
+    & .shape-10 {
+        top: 94%;
+        left: 73%;
+        z-index: 1;
+        animation: animshape1 5s infinite linear;
+        @media #{$large-mobile} {
+            display: none;
+        }
+    }
+    & .shape-11 {
+        top: 78%;
+        left: 18%;
+        z-index: 1;
+        animation: animshape2 5s infinite linear;
+        @media #{$large-mobile} {
+            display: none;
+        }
+    }
+    & .sliderone-social{
+        position: absolute;
+        top: 50%;
+        left: 60px;
+        transform: translateY(-50%);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        z-index: 5;
+        row-gap: 30px;
+
+        @media only screen and (min-width: 1550px) and (max-width: 1699px) {
+            left: 15px;
+        }
+        @media only screen and (min-width: 1300px) and (max-width: 1549px) {
+            left: 15px;
+        }
+        @media only screen and (min-width: 130px) and (max-width: 1299px) {
+            display: none;
+        }
+        & li {
+            & a {
+                color: $white;
+                font-size: 24px;
+                &:hover{
+                    color: $secondary;
+                }
+            }
+        }
+    }
+}
+
+/* Slider Two Style Start */
+.slider-two{
+    height: 1000px;
+    @media #{$big-device, $laptop-device} {
+        height: 100vh;
+    }
+    @media #{$desktop-device} {
+        height: 800px;
+    }
+    & .heading-one {
+        position: relative;
+        z-index: 9999;
+        &-subtitle {
+            font-size: 24px;
+            letter-spacing: 1px;    
+            margin-bottom: 15px;
+            display: block;
+            @media #{$desktop-device, $tablet-device, $large-mobile} {
+                font-size: 20px;
+            }
+            @media #{$small-mobile} {
+                font-size: 18px;
+            }
+        }
+        &-title {
+            font-size: 72px;
+            @media only screen and (min-width: 1550px) and (max-width: 1650px) {
+                font-size: 60px;
+            }
+            @media #{$big-device} {
+                font-size: 60px;
+            }
+            @media #{$laptop-device, $tablet-device, $large-mobile} {
+                font-size: 50px;
+            }
+            @media #{$desktop-device} {
+                font-size: 40px;
+            }
+            @media #{$small-mobile} {
+                font-size: 40px;
+            }
+        }
+        & p {
+            font-size: 21px;
+            margin: 30px 0 45px;
+            @media #{$laptop-device} {
+                font-size: 18px;
+            }
+            @media #{$desktop-device, $tablet-device} {
+                font-size: 16px;
+                margin: 20px 0 40px;
+            }
+            @media #{$tablet-device, $large-mobile} {
+                font-size: 16px;
+                margin: 10px 0 30px;
+            }
+            @media #{$small-mobile} {
+                margin: 10px 0 20px;
+            }
+        }
+        & .btn-style-one{
+            display: inline-block;
+            padding: 25px 60px;
+            font-weight: 700;
+            @media #{$desktop-device, $tablet-device} {
+                padding: 22px 50px;
+            }
+            @media #{$large-mobile} {
+                padding: 18px 40px;
+            }
+        }
+    }
+    @media #{$tablet-device} {
+        height: 945px;
+        .heading-one{
+            margin: 190px 0 50px;
+        }
+    }
+    @media #{$large-mobile} {
+        height: 850px;
+        .heading-one{
+            margin: 130px 0 50px;
+        }
+    }
+    @media #{$small-mobile} {
+        height: 750px;
+        .heading-one{
+            margin: 150px 0 50px;
+        }
+    }
+    @media #{$extra-small-mobile} {
+        height: 660px;
+        .heading-one{
+            margin: 150px 0 50px;
+        }
+    }
+}
+.slidertwo{
+    height: 1000px;
+    @media #{$big-device, $laptop-device} {
+        height: 100vh;
+    }
+    @media #{$desktop-device} {
+        height: 800px;
+    }
+    @media #{$tablet-device, $large-mobile} {
+        height: 100%;
+    }
+    & .swiper-slide{
+        display: flex;
+        align-items: center;
+    }
+    &-shape1{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 9;
+        & .scene {
+            width: 100%;
+            height: 100%;
+        }
+        & .shape {
+            position: absolute;
+            &.shape-7{
+                top: 0;
+                right: 20%;
+                @media #{$big-device} {
+                    right: 8%;
+                }
+                @media #{$laptop-device, $desktop-device} {
+                    right: 8%;
+                }
+                @media #{$large-mobile} {
+                    display: none;
+                }
+                @media #{$tablet-device} {
+                    right: 0;
+                }
+                & img {
+                    @media #{$tablet-device} {
+                        width: 80%;
+                    }
+                }
+            }
+            &.shape-9{
+                left: 445px;
+                top: 20%;
+                z-index: 1;
+                animation: zoom1 3s infinite linear;
+                @media only screen and (min-width: 1550px) and (max-width: 1650px) {
+                    left: 360px;
+                }
+                @media #{$big-device} {
+                    left: 340px;
+                    top: 24%;
+                }
+                @media #{$laptop-device} {
+                    left: 20%;
+                    top: 22%;
+                }
+                @media #{$desktop-device} {
+                    top: 18%;
+                    left: 24%;
+                    width: 5%;
+                }
+                @media #{$large-mobile, $tablet-device} {
+                    display: none;
+                }
+            }
+            &.shape-10{
+                left: 32.6%;
+                top: 32.5%;
+                @media #{$laptop-device, $desktop-device} {
+                    left: 33%;
+                }
+                @media #{$large-mobile, $tablet-device} {
+                    display: none;
+                }
+            }
+            &.shape-11{
+                top: 23.6%;
+                right: 38%;
+                @media #{$large-mobile, $tablet-device} {
+                    display: none;
+                }
+            }
+            &.shape-12{
+                top: 12%;
+                right: 3%;
+                @media #{$laptop-device, $desktop-device} {
+                    top: 16%;
+                }
+                @media #{$large-mobile, $tablet-device} {
+                    display: none;
+                }
+            }
+            &.shape-14{
+                top: 22%;
+                right: 8.6%;
+                animation: zoom1 3s infinite linear;
+                @media #{$laptop-device} {
+                    right: 6%;
+                    top: 25%;
+                }
+                @media #{$desktop-device} {
+                    right: 7%;
+                    top: 28%;
+                }
+                @media #{$large-mobile, $tablet-device} {
+                    display: none;
+                }
+            }
+            &.shape-15{
+                right: 30%;
+                top: 39%;
+                @media #{$large-mobile, $tablet-device} {
+                    display: none;
+                }
+            }
+            &.shape-16{
+                right: 22%;
+                top: 53%;
+                z-index: 1;
+                animation: zoom1 3s infinite linear;
+                @media only screen and (min-width: 1550px) and (max-width: 1650px) {
+                    right: 24%;
+                }
+                @media #{$big-device} {
+                    right: 23%;
+                }
+                @media #{$laptop-device} {
+                    right: 26%;
+                }
+                @media #{$desktop-device} {
+                    right: 28%;
+                    width: 6%;
+                    top: 56%;
+                }
+                @media #{$large-mobile, $tablet-device} {
+                    display: none;
+                }
+            }
+            &.shape-17{
+                right: 28%;
+                bottom: 30%;
+                animation: circle1 3s infinite linear;
+                @media only screen and (min-width: 1550px) and (max-width: 1650px) {
+                    right: 30%;
+                }
+                @media #{$big-device} {
+                    right: 32%;
+                }
+                @media #{$laptop-device} {
+                    right: 35%;
+                }
+                @media #{$desktop-device} {
+                    right: 38%;
+                    bottom: 26%;
+                }
+                @media #{$large-mobile, $tablet-device} {
+                    display: none;
+                }
+            }
+            &.shape-18{
+                left: 40%;
+                bottom: 17%;
+                @media #{$laptop-device, $desktop-device} {
+                    left: 35%;
+                    bottom: 28%;
+                }
+                @media #{$large-mobile, $tablet-device} {
+                    display: none;
+                }
+            }
+            &.shape-19{
+                left: 7.8%;
+                bottom: 15.2%;
+                animation: zoom1 3s infinite linear;
+                @media #{$laptop-device, $desktop-device} {
+                    left: 5%;
+                    bottom: 28%;
+                }
+                @media #{$large-mobile, $tablet-device} {
+                    display: none;
+                }
+            }
+            &.shape-20{
+                left: 14%;
+                bottom: 3%;
+                z-index: -1;
+                animation: moveleftright1 3s infinite linear;
+                @media #{$laptop-device, $desktop-device} {
+                    left: 5%;
+                    bottom: 20%;
+                }
+                @media #{$large-mobile, $tablet-device} {
+                    display: none;
+                }
+            }
+            &.shape-21{
+                right: 23%;
+                bottom: 8%;
+                @media only screen and (min-width: 1550px) and (max-width: 1650px) {
+                    right: 27%;
+                }
+                @media #{$big-device} {
+                    right: 27%;
+                }
+                @media #{$laptop-device} {
+                    right: 32%;
+                }
+                @media #{$desktop-device} {
+                    right: 36%;
+                    bottom: 6%;
+                }
+                @media #{$large-mobile, $tablet-device} {
+                    display: none;
+                }
+            }
+        }
+    }
+    &-shape2{
+        & .shape {
+            position: absolute;
+            &.shape-6{
+                top: 0;
+                left: 0px;
+                z-index: -1;
+                & img{
+                    @media #{$tablet-device} {
+                        width: 80%;
+                    }
+                }
+                @media #{$large-mobile} {
+                    display: none;
+                }
+            }
+            &.shape-8{
+                right: 0;
+                bottom: 5%;
+                z-index: -1;
+                @media only screen and (min-width: 1550px) and (max-width: 1650px) {
+                    width: 28%;
+                    bottom: 3%;
+                }
+                @media #{$big-device} {
+                    width: 30%;
+                    bottom: 3%;
+                }
+                @media #{$laptop-device} {
+                    width: 32%;
+                }
+                @media #{$desktop-device} {
+                    width: 35%;
+                }
+                @media #{$tablet-device} {
+                    width: 31%;
+                }
+                @media #{$large-mobile} {
+                    display: none;
+                }
+            }
+            &.shape-13{
+                top: 26%;
+                right: 11.6%;
+                z-index: 6;
+                animation: moveupdown1 3s infinite linear;
+                @media #{$laptop-device} {
+                    top: 28%;
+                    right: 10%;
+                }
+                @media #{$desktop-device} {
+                    top: 24%;
+                    right: 12%;
+                }
+                @media #{$large-mobile, $tablet-device} {
+                    display: none;
+                }
+            }
+        }
+    }
+    &-shape3{
+        & .shape{
+            position: absolute;
+            &.shape-1{
+                left: 0;
+                top: 50%;
+                z-index: 999;
+                transform: translateY(-40%);
+            }
+            
+            @media #{$large-mobile, $tablet-device} {
+                display: none;
+            }
+        }
+    }
+    &-leftimg{
+        margin-left: -12px;
+        & .img-one{
+            position: relative;
+            margin-left: -0px;
+            top: -35px;
+            @media #{$desktop-device} {
+                position: relative;
+                width: 100%;
+                left: 0%;
+            }
+            @media #{$laptop-device} {
+                position: relative;
+                width: 95%;
+                left: 0%;
+                top: -60px;
+            }
+            @media #{$tablet-device} {
+                top: 0px;
+                width: 85%;
+            }
+            @media #{$large-mobile} {
+                top: 0px;
+                width: 90%;
+            }
+        }
+        & .img-two{
+            position: absolute;
+            bottom: 6%;
+            left: 17.4%;
+            z-index: 99;
+            @media only screen and (min-width: 1550px) and (max-width: 1650px) {
+                left: 15%;
+            }
+            @media #{$big-device} {
+                left: 12%;
+            }
+            @media #{$laptop-device, $desktop-device} {
+                bottom: 24%;
+                left: 14%;
+                width: 18%;
+            }
+            @media #{$desktop-device} {
+                bottom: 24%;
+            }
+            @media #{$tablet-device} {
+                position: relative;
+                bottom: 100px;
+                left: 68%;
+                width: 34%;
+            }
+            @media #{$large-mobile} {
+                position: relative;
+                bottom: 70px;
+                left: 60%;
+                width: 34%;
+            }
+            @media #{$extra-small-mobile} {
+                bottom: 50px;
+            }
+        }
+    }
+    &-rightimg{
+        text-align: right;
+        margin-right: -12px;
+        & .img-one{
+            position: absolute;
+            bottom: 2px;
+            right: 0;
+            z-index: 8;
+            @media #{$tablet-device} {
+                bottom: 40px;
+            }                
+            @media #{$large-mobile} {
+                bottom: 35px;
+            }
+            & img {
+                @media only screen and (min-width: 1550px) and (max-width: 1650px) {
+                    width: 96%;
+                }
+                @media #{$big-device} {
+                    width: 90%;
+                }
+                @media #{$laptop-device} {
+                    width: 85%;
+                }
+                @media #{$desktop-device} {
+                    width: 76%;
+                }
+                @media #{$tablet-device} {
+                    width: 50%;
+                }
+                @media #{$large-mobile} {
+                    width: 45%;
+                }
+                @media #{$small-mobile} {
+                    width: 40%;
+                }
+            }
+        }
+        & .img-two {
+            position: absolute;
+            right: 17%;
+            top: 22%;
+            @media #{$desktop-device} {
+                right: 20%;
+                top: 18%;
+                width: 14%;
+            }
+            @media #{$tablet-device} {
+                position: absolute;
+                right: 30%;
+                top: 52%;
+                width: 15%;
+            }
+            @media #{$large-mobile} {
+                top: 55%;
+                width: 18%;
+                right: 30%;
+            }
+            @media #{$small-mobile} {
+                top: 58%;
+                right: 35%;
+            }
+            @media #{$extra-small-mobile} {
+                top: 62%;
+                right: 35%;
+            }
+        }
+        & .img-three{
+            position: absolute;
+            right: 31%;
+            bottom: 11%;
+            
+            @media #{$laptop-device} {
+                right: 35%;
+            }
+            @media #{$desktop-device} {
+                width: 10%;
+                right: 40%;
+            }
+            @media #{$tablet-device} {
+                bottom: 5%;
+                width: 10%;
+                right: 36%;
+            }
+            @media #{$large-mobile} {
+                bottom: 6%;
+                width: 10%;
+                right: 36%;
+            }
+        }
+    }
+    & .swiper-pagination{
+        bottom: 70px;
+        @media #{$desktop-device, $tablet-device, $large-mobile} {
+            bottom: 0px;
+            line-height: 1;
+        }
+        &-bullet{
+            width: 40px;
+            border-radius: 5px;
+            height: 6px;
+            @media #{$large-mobile} {
+                width: 30px;
+            }
+            &-active{
+                background: $primary;
+            }
+        }
+    }
+}
+
+/* Hero Style Start */
+.hero{
+    height: 100vh;
+    padding-top: 140px;
+    position: relative;
+    @media #{$desktop-device} {
+        height: 950px;
+    }
+    @media #{$tablet-device, $large-mobile} {
+        height: auto;
+    }
+    @media #{$large-mobile} {
+        padding-top: 115px;
+    }
+    @media #{$small-mobile} {
+        padding-top: 100px;
+    }
+    &-content {
+        position: relative;
+        top: 100px;
+        @media #{$tablet-device, $large-mobile} {
+            top: 20px;
+        }
+        & .subtitle {
+            font-size: 24px;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: $secondary;
+            display: flex;
+            margin-bottom: 5px;
+            letter-spacing: 4px;
+            @media #{$desktop-device} {
+                font-size: 24px;
+            }
+            @media #{$tablet-device} {
+                font-size: 20px;
+            }
+            @media #{$large-mobile} {
+                font-size: 18px;
+            }
+            @media #{$small-mobile} {
+                font-size: 16px;
+            }
+        }
+        & .title {
+            font-size: 72px;
+            font-weight: 700;
+            @media #{$desktop-device} {
+                font-size: 60px;
+            }
+            @media #{$tablet-device} {
+                font-size: 50px;
+            }
+            @media #{$large-mobile} {
+                font-size: 40px;
+            }
+            @media #{$small-mobile} {
+                font-size: 36px;
+            }
+        }
+        & .text{
+            font-size: 21px;
+            color: #717788;
+            margin: 45px 0 5px;
+            @media #{$tablet-device} {
+                margin: 30px 0 0px;
+                font-size: 18px;
+            }
+            @media #{$large-mobile} {
+                margin: 20px 0 0px;
+                font-size: 16px;
+            }
+        }
+        & .btn-style-one{
+            display: inline-block;
+            padding: 25px 64px;
+        }
+    }
+    & .btn-style-one {
+        margin-top: 40px;
+        display: inline-flex;
+        @media #{$tablet-device} {
+            padding: 20px 40px;
+        }
+        @media #{$large-mobile} {
+            padding: 18px 35px;
+            margin-top: 25px;
+        }
+        &:hover{
+            background-color: $white;
+            color: $dark;
+        }
+    }
+    &-facts{
+        &-info{
+            position: absolute;
+            z-index: 3;
+            background: $white;
+            box-shadow:  -14px 22px 48px 0px rgba(0, 0, 0, 0.06);
+            border-radius: 7px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            row-gap: 10px;
+            max-width: 294px;
+            width: 100%;
+            padding: 35px;
+            top: 210px;
+            left: -40px;
+            visibility: visible;
+            animation-duration: 0.9s;
+            animation-delay: 0.1s;
+            animation-name: zoomIn;
+            &-review{
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                & span {
+                    color: #f2c71b;
+                    line-height: 1;
+                }
+            }
+            &-text{
+                font-family: $opensans;
+                font-style: italic;
+                margin: 5px 0px 0px;            
+                @media #{$extra-small-mobile} {
+                    font-size: 12px;
+                    margin-top: 0;
+                }
+            }
+            & .hero-facts-client-name{
+                text-transform: uppercase;
+                line-height: 1;
+            }
+            @media #{$desktop-device} {
+                padding: 25px;
+            }
+            @media #{$tablet-device} {
+                top: 72%;
+                left: -20px;
+            }
+            @media #{$large-mobile} {
+                top: 76%;
+                left: -20px;
+                max-width: 240px;
+                padding: 20px;
+            }
+            @media #{$small-mobile} {
+                left: 0;
+            }                
+            @media #{$extra-small-mobile} {
+                max-width: 180px;
+                padding: 15px;
+                left: -5px;
+            }
+        }
+        &-client{
+            position: absolute;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            row-gap: 10px;
+            background: $white;
+            padding: 25px 25px 20px;
+            box-shadow: 15px 11px 48px 0px rgba(0, 0, 0, 0.08);
+            border-radius: 13px;
+            right: -38%;
+            top: 90%;
+            visibility: visible;
+            animation-duration: 0.9s;
+            animation-delay: 0.1s;
+            animation-name: zoomIn;
+            &-name{
+                font-size: 14px;
+                font-weight: 700;
+                font-family: $poppins;
+            }
+            @media only screen and (min-width: 1550px) and (max-width: 1650px) {
+                right: -190px;
+            }
+            @media #{$big-device} {
+                right: -100px;
+            }
+            @media #{$laptop-device} {
+                right: -6%;
+            }
+            @media #{$desktop-device} {
+                right: -4%;
+                top: 90px;
+                padding: 20px 20px 15px;
+            }
+            @media #{$tablet-device, $large-mobile} {
+                right: 0;
+                top: 50%;
+                padding: 20px 20px 15px;
+            }
+            @media #{$small-mobile} {
+                right: 0;
+                top: 54%;
+                padding: 15px 15px 10px;
+            }
+        }
+        &-shape1{
+            position: absolute;
+            margin-left: 30px;
+            top: -194px;
+            right: -240px;
+            @media only screen and (min-width: 1550px) and (max-width: 1650px) {
+                right: -190px;
+            }
+            @media #{$big-device} {
+                right: -100px;
+            }
+            @media #{$laptop-device} {
+                right: -35px;
+                top: -130px;
+            }
+            @media #{$desktop-device} {
+                right: -15px;
+                top: -90px;
+            }
+            @media #{$tablet-device, $large-mobile} {
+                top: 90px;
+                right: auto;
+            }
+        }
+        &-shape2{
+            position: absolute;
+            z-index: 2;
+            top: -150px;
+            left: 12%;
+            & img {
+                animation: zoom1 5s infinite linear;
+            }
+            @media #{$big-device} {
+                top: -190px;
+            }
+            @media #{$laptop-device} {
+                left: 10%;
+            }
+            @media #{$desktop-device} {
+                top: -100px;
+                left: 8%;
+                img {
+                    width: 80%;
+                }
+            }
+            @media #{$tablet-device, $large-mobile} {
+                top: 14%;
+                left: 8%;
+            }
+            @media #{$small-mobile} {
+                img {
+                    width: 80%;
+                }
+            }
+            @media #{$extra-small-mobile} {
+                top: 18%;
+                img {
+                    width: 60%;
+                }
+            }
+        }
+        &-shape3{
+            position: absolute;
+            z-index: 2;
+            background: $white;
+            padding: 20px;
+            box-shadow: 15px 11px 48px 0px rgba(0, 0, 0, 0.08);
+            border-radius: 7px;
+            right: -9%;
+            top: -192px;
+            visibility: visible;
+            animation-duration: 0.9s;
+            animation-delay: 0.1s;
+            animation-name: zoomIn;
+            @media only screen and (min-width: 1550px) and (max-width: 1650px) {
+                right: -3%;
+            }
+            @media #{$big-device} {
+                right: 7%;
+            }
+            @media #{$laptop-device} {
+                right: 15%;
+                top: -140px;
+            }
+            @media #{$desktop-device} {
+                right: 15%;
+                top: -90px;
+                padding: 15px;
+            }
+            @media #{$tablet-device, $large-mobile} {
+                right: 20%;
+                top: 13%;
+            }
+            @media #{$small-mobile} {
+                right: 12%;
+                top: 12%;
+                padding: 15px;
+            }
+        }
+        &-shape4{
+            position: absolute;
+            z-index: 2;
+            left: 43%;
+            top: 420px;
+            & img {
+                animation: moveleftright1 5s infinite linear;
+            }
+            @media #{$tablet-device} {
+                top: 100%;
+                left: 40%;
+            }
+            @media #{$large-mobile} {
+                display: none;
+            }
+        }
+    }
+    &-image{
+        &-wrapper{
+            position: relative;
+        }
+        position: absolute;
+        top: -250px;
+        right: -210px;
+        @media only screen and (min-width: 1550px) and (max-width: 1650px) {
+            right: -180px;
+        }
+        @media #{$big-device} {
+            right: -110px;
+        }
+        @media #{$laptop-device} {
+            right: -20px;
+            top: -180px;
+        }
+        @media #{$desktop-device} {
+            right: -10px;
+            top: -120px;
+        }
+        @media #{$tablet-device, $large-mobile} {
+            position: relative;
+            top: 40px;
+            right: auto;
+        }
+    }
+    & .scene{
+        height: 100%;
+        position: absolute !important;
+        width: 100%;
+    }
+    &-shape{
+        &.shape-1{
+            position: absolute;
+            top: 100px;
+            left: -15px;
+            @media #{$laptop-device, $desktop-device} {
+                top: 10px;
+            }
+            @media #{$tablet-device, $large-mobile} {
+                display: none;
+            }
+        }
+        &.shape-2{
+            position: absolute;
+            top: 100px;
+            left: -15px;
+            @media #{$laptop-device, $desktop-device} {
+                top: 10px;
+            }
+            @media #{$tablet-device, $large-mobile} {
+                display: none;
+            }
+        }
+        &.shape-3{
+            position: absolute;
+            top: 25px;
+            left: 50px;
+            @media only screen and (min-width: 1550px) and (max-width: 1650px) {
+                left: 2%;
+            }
+            @media #{$big-device} {
+                top: 0px;
+                left: 20px;
+            }
+            @media #{$tablet-device, $large-mobile} {
+                display: none;
+            }
+        }
+        &.shape-4{
+            position: absolute;
+            top: 60px;
+            left: 125px;
+            @media only screen and (min-width: 1550px) and (max-width: 1650px) {
+                left: 4%;
+            }
+            @media #{$big-device} {
+                left: 15px;
+            }
+            @media #{$laptop-device, $desktop-device, $tablet-device, $large-mobile} {
+                display: none;
+            }
+        }
+        &.shape-5{
+            position: absolute;
+            top: 280px;
+            left: 220px;
+            @media only screen and (min-width: 1550px) and (max-width: 1650px) {
+                left: 9%;
+            }
+            @media #{$big-device} {
+                left: 60px;
+            }
+            @media #{$laptop-device, $desktop-device, $tablet-device, $large-mobile} {
+                display: none;
+            }
+        }
+        &.shape-6{
+            position: absolute;
+            top: 660px;
+            left: 315px;
+            @media #{$laptop-device} {
+                left: 20%;
+            }
+            @media #{$desktop-device} {
+                left: 22%;
+            }
+            @media #{$tablet-device, $large-mobile} {
+                display: none;
+            }
+        }
+        &.shape-7{
+            position: absolute;
+            top: 100px;
+            left: 43%;
+            @media #{$desktop-device} {
+                top: 80px;
+                left: 40%;
+            }
+            @media #{$tablet-device, $large-mobile} {
+                display: none;
+            }
+        }
+        &.shape-8{
+            position: absolute;
+            top: 80px;
+            left: 50%;
+            @media #{$desktop-device} {
+                top: 50px;
+                left: 52%;
+            }
+            @media #{$tablet-device, $large-mobile} {
+                display: none;
+            }
+        }
+        &.shape-9{
+            position: absolute;
+            top: 42%;
+            left: 44%;
+            @media #{$tablet-device, $large-mobile} {
+                display: none;
+            }
+        }
+        &.shape-10{
+            position: absolute;
+            top: 62%;
+            left: 33%;
+            @media #{$laptop-device, $desktop-device} {
+                left: 28%;
+            }
+            @media #{$tablet-device, $large-mobile} {
+                display: none;
+            }
+        }
+        &.shape-12{
+            position: absolute;
+            top: 0%;
+            right: 8%;
+            & img {
+                animation: circle2 5s infinite linear;
+            }
+            @media only screen and (min-width: 1550px) and (max-width: 1650px) {
+                right: 7%;
+            }
+            @media #{$tablet-device, $large-mobile} {
+                display: none;
+            }
+        }
+        &.shape-13{
+            position: absolute;
+            top: 14%;
+            right: 5%;
+            & img {
+                animation: zoom1 5s infinite linear;
+            }
+            @media only screen and (min-width: 1550px) and (max-width: 1650px) {
+                right: 1%;
+            }
+            @media #{$big-device} {
+                top: 12%;
+                right: 1%;
+            }
+            @media #{$laptop-device} {
+                right: 2%;
+            }
+            @media #{$desktop-device} {
+                top: 10%;
+                right: 1%;
+                img{
+                    width: 70%;
+                }
+            }
+            @media #{$tablet-device, $large-mobile} {
+                display: none;
+            }
+        }
+        &.shape-14{
+            position: absolute;
+            top: 0;
+            right: 3%;
+            @media #{$tablet-device, $large-mobile} {
+                display: none;
+            }
+        }
+        &.shape-15{
+            position: absolute;
+            top: 61%;
+            right: 2%;
+            @media only screen and (min-width: 1550px) and (max-width: 1650px) {
+                top: 76%;
+                right: 1%;
+            }
+            @media #{$big-device} {
+                top: 70%;
+                right: 1%;
+            }
+            @media #{$laptop-device} {
+                top: 70%;
+                right: 1%;
+            }            
+            @media #{$desktop-device} {
+                top: 65%;
+            }
+            @media #{$tablet-device, $large-mobile} {
+                display: none;
+            }
+        }
+    }
+}

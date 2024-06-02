@@ -1,0 +1,98 @@
+<header class="header-wrapper header-one sticky-header">
+    <div class="custom-container">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="flex-center justify-content-between">
+                        <!-- Header Logo Start -->
+                        <div class="logo">
+                            <a href="/web">
+                                <img class="logo-1" src="images/logo.png" height="50" alt="logoImage">
+                                <img class="logo-2" src="images/logo-2.png" height="50" alt="logoImage">
+                            </a>
+                        </div>
+                        <!-- Header Logo End -->
+
+                        <div class="flex-center header-right">
+                            <!-- Header Menu Start -->
+                            <div class="d-none d-lg-flex header-right_menu">
+                                <nav class="main-menu">
+                                    <ul>  
+                                        <li class="{% if nav == '/web' %}active{% endif %}">
+                                            <a href="/web">Acceuil</a>
+                                        </li>
+                                        <li class="{% if nav == '/web/about' %}active{% endif %}">
+                                            <a href="/web/about">A Propos de nous</a>
+                                        </li>
+                                        <!-- <li class="{% if nav == '/web/project' %}active{% endif %}">
+                                            <a href="/web/project">Projets</a>
+                                        </li> -->
+                                        <li class="{% if nav == '/web/contact' %}active{% endif %}">
+                                            <a href="/web/contact">Contact</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <!-- Header Menu End -->
+
+                            <!-- Header Actions Start -->
+                            <div class="header-right_actions flex-center">
+                                <div class="header-right_button header-button">
+                                    <a href="/web/contact" class="btn-style-one"><span>Commencer</span></a>
+                                </div>
+
+                                <div class="hamburger d-block d-lg-none">
+                                    <!-- Mobile Menu Hambarger Action Button Start -->
+                                    <a class="header-action-btn header-action-btn-menu hamburger_button d-flex" href="#/" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-header">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </a>
+                                    <!-- Mobile Menu Hambarger Action Button End -->
+                                </div>
+
+                            </div>
+                            <!-- Header Social Actions End -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="offcanvas offcanvas-end" id="offcanvas-header">
+
+    <div class="offcanvas-header">
+        <!-- Header Logo Start -->
+        <div class="logo">
+            <a href="/web">
+                <img src="images/logo-2.png" height="20" width="20" alt="logo de lobi rdc">
+            </a>
+        </div>
+        <!-- Header Logo End -->
+        <button type="button" class="btn-close text-reset mobilemenu-close" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="offcanvas-body">
+        <!-- mobile menu navigation start -->
+        <nav>
+            <ul class="mobile-menu">
+                <li class="{% if nav == '/web' %}active{% endif %}">
+                    <a href="/web">Acceuil</a>
+                </li>
+                <li class="{% if nav == '/web/about' %}active{% endif %}">
+                    <a href="/web/about">A Propos de nous</a>
+                </li>
+                <!-- <li class="{% if nav == '/web/project' %}active{% endif %}">
+                    <a href="/web/project">Projets</a>
+                </li> -->
+                <li class="{% if nav == '/web/contact' %}active{% endif %}">
+                    <a href="/web/contact">Contactez-nous</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- mobile menu navigation end -->
+    </div>
+
+</div>
+

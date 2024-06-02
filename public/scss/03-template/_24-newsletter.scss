@@ -1,0 +1,202 @@
+/*----------------------------------------*/
+/*  2.24 - Newsletter Styles CSS
+/*----------------------------------------*/
+.newsletter{
+    position: relative;
+    &-wrapper{
+        overflow: hidden;
+        position: relative;
+        z-index: 9;
+    }
+    &-inner{
+        background: $primary;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 13px 0 0 13px;
+        padding: 70px 0px 70px 70px;
+        position: relative;
+        &::after{
+            background-color: $primary;
+            content: "";
+            height: 100%;
+            left: 98%;
+            position: absolute;
+            top: 0;
+            width: 5000px;
+            z-index: -1;
+            @media #{$large-mobile} {
+                display: none;
+            }
+        }
+        @media #{$desktop-device} {
+            padding: 70px 0px 70px 40px;
+            column-gap: 15px;
+        }
+        @media #{$tablet-device} {
+            padding: 70px 0px 70px 30px;
+            column-gap: 10px;
+        }
+        @media #{$large-mobile} {
+            padding: 70px 30px 70px 30px;
+            border-radius: 13px;
+            row-gap: 30px;
+            flex-direction: column;
+        }
+        @media #{$small-mobile} {
+            padding: 50px 30px;
+        }
+
+        & .heading-one{
+            max-width: 530px;
+            width: 100%;
+            &-subtitle{
+                color: $white;
+            }
+            &-title{
+                color: $white;
+                font-size: 48px;
+                margin: 5px 0 20px;
+                @media #{$large-mobile} {
+                    font-size: 40px;
+                }
+                @media #{$extra-small-mobile} {
+                    font-size: 36px;
+                }
+            }
+            &-text{
+                color: $white;
+            }
+        }
+        & .footer-widget-form{
+            max-width: 470px;
+            width: 100%;
+            margin-top: 0px;
+            & input{
+                height: 72px;
+                padding: 0 60px 0 30px;
+            }
+            @media #{$large-mobile} {
+                max-width: 500px;
+            }
+        }
+    }
+    & .shape {
+        position: absolute;
+        &.shape-1{
+            top: -70px;
+            left: 155px;
+            z-index: -2;
+            @media only screen and (min-width: 1550px) and (max-width: 1650px) {
+                top: -50px;
+                left: 15px;
+            }
+            @media #{$big-device} {
+                top: 5px;
+                left: 0px;
+                width: 40%;
+                & img {
+                    width: 20%;
+                }
+            }
+            @media #{$laptop-device, $desktop-device, $tablet-device, $large-mobile} {
+                display: none;
+            }
+        }
+        &.shape-2{
+            top: -50px;
+            right: 60px;
+            z-index: 10;
+            @media #{$large-mobile} {
+                display: none;
+            }
+        }
+    }
+}
+
+.newsletter-two{
+    position: relative;
+    &-inner{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 40px 0 90px;
+        border-bottom: 1px solid rgba(50, 47, 179, .13);
+        margin-bottom: 120px;
+        column-gap: 20px;
+        @media #{$tablet-device, $large-mobile} {
+            flex-direction: column;
+            row-gap: 30px;
+            padding: 0 0 60px;
+            align-items: start;
+            margin-bottom: 70px;
+        }
+        & .heading-one{
+            max-width: 530px;
+            width: 100%;
+            @media #{$tablet-device, $large-mobile} {
+                max-width: 100%;
+            }
+            &-title{
+                
+                font-size: 48px;
+                margin: 5px 0 20px;
+                @media #{$large-mobile} {
+                    font-size: 40px;
+                }
+                @media #{$extra-small-mobile} {
+                    font-size: 36px;
+                }
+            }
+        }
+        & .footer-widget-form{
+            max-width: 500px;
+            width: 100%;
+            margin-top: 0px;
+            overflow: visible;
+            @media #{$tablet-device, $large-mobile} {
+                max-width: 100%;
+            }
+            & input{
+                height: 72px;
+                padding: 0 200px 0 20px;
+                box-shadow: rgba(149, 157, 165, 0.2) 0px 0px 10px;
+                @media #{$laptop-device, $desktop-device} {
+                    padding: 0 180px 0 20px;
+                }
+                @media #{$tablet-device} {
+                    padding: 0 180px 0 20px;
+                }
+                @media #{$large-mobile} {
+                    padding: 0 160px 0 20px;
+                    height: 60px;
+                }
+            }
+            & .btn{
+                right: 0;
+                top: 0;
+                height: 100%;
+                transform: inherit;
+                background: #322fb3;
+                background:  linear-gradient(-45deg, #5BCFF2 0%, #417DD2 50%, #322fb3 100%);
+                border-radius: 0 7px 7px 0;
+                padding: 20px 48px;
+                font-family: $poppins;
+                font-weight: 300;
+                font-size: 18px;
+                &::before{
+                    border-radius: 0 7px 7px 0;
+                }
+                @media #{$laptop-device, $desktop-device} {
+                    padding: 20px 35px;
+                }
+                @media #{$tablet-device} {
+                    padding: 20px 35px;
+                }
+                @media #{$large-mobile} {
+                    padding: 20px 25px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,211 @@
+/* =============================
+    2.3 - Strategy Style
+================================ */
+.strategy{
+    position: relative;
+    & .heading-one{
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto 80px;
+        @media #{$desktop-device} {
+            margin: 0 auto 80px;
+        }
+        @media #{$tablet-device} {
+            margin: 0 auto 60px;
+        }
+        @media #{$large-mobile} {
+            margin: 0 auto 40px;
+        }
+    }
+    &-single{
+        display: flex;
+        align-items: flex-start;
+    }
+    &-icon {
+        flex: 0 0 auto;
+        margin-right: 50px;
+        position: relative;
+        & span {
+            content: "";
+            position: absolute;
+            background-color: $light;
+            height: 48px;
+            width: 48px;
+            border-radius: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        & img {
+            position: relative;
+            top: 20px;
+            left: 20px;
+        }
+    }
+    &-content{
+        & .title {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 25px;
+            @media #{$desktop-device} {
+                font-size: 20px;
+            }  
+            @media #{$large-mobile} {
+                margin-bottom: 15px;
+                font-size: 20px;
+            }
+        }
+    }
+    &-shape{
+        position: absolute;
+        
+        @media #{$large-mobile, $tablet-device} {
+            display: none;
+        }
+        &.shape-1{
+            top: 70px;
+            left: 135px;
+            animation: zoom1 4s infinite linear;
+        }
+        &.shape-2{
+            bottom: 100px;
+            right: 20px;
+            animation: circle1 2.2s infinite alternate;
+        }
+        &.shape-3{
+            top: 150px;
+            right: 100px;
+            animation: moveupdown1 3s infinite linear;
+        }
+        &.shape-4{
+            top: 115px;
+            right: 20px;
+            animation: moveupdown1 2s infinite linear;
+        }
+        &.shape-5{
+            top: 70px;
+            left: 80px;
+            opacity: 0.6;
+            animation: moveupdown1 3s infinite linear;
+        }
+    }
+    &-two{
+        & .heading-one{
+            margin-right: 100px;
+            @media #{$laptop-device} {
+                margin-right: 80px;
+            }
+            @media #{$desktop-device} {
+                margin-right: 60px;
+            }
+            @media #{$large-mobile} {
+                margin-right: 0px;
+            }
+            &-title{
+                margin: 5px 0 40px;
+                @media #{$large-mobile} {
+                    margin: 5px 0 30px;
+                }
+            }
+        }
+
+        &-inner{
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            row-gap: 60px;
+            @media #{$tablet-device} {
+                gap: 30px;
+                margin-top: 50px;
+            }
+            @media #{$large-mobile} {
+                gap: 30px;
+                margin-top: 40px;
+            }
+        }
+        &-single{
+            display: flex;
+            column-gap: 30px;
+            @media #{$tablet-device} {
+                max-width: 333px;
+                column-gap: 20px;
+            }
+            @media #{$large-mobile} {
+                max-width: 100%;
+                column-gap: 20px;
+            }
+        }
+        &-icon{
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(50, 47, 179, 0.2);
+            background: linear-gradient(-45deg, rgba(91, 207, 242, 0.2) 0%, rgba(65, 125, 210, 0.2) 50%, rgba(50, 47, 179, 0.2) 100%);
+            flex: 0 0 auto;
+            
+            @media #{$tablet-device, $large-mobile} {
+                width: 80px;
+                height: 80px;
+            }
+        }
+        &-content{
+            & .title{
+                font-size: 24px;
+                font-weight: 700;
+                margin-bottom: 20px;        
+                @media #{$tablet-device, $large-mobile} {
+                    font-size: 22px;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+
+    &-home2-shape{
+        position: absolute;
+        left: 0;
+        top: 28%;
+        width: 100%;
+        @media #{$tablet-device} {
+            top: 26%;
+        }
+        .shape{
+            position: absolute;
+
+            &.shape-1{
+                right: -10px;
+                top: 30px;
+                animation: moveleftright1 3s infinite linear;
+                @media #{$tablet-device} {
+                    right: -50px;
+                    top: 27%;
+                    & img {
+                        width: 70%;
+                    }
+                }
+                @media #{$large-mobile} {
+                    display: none;
+                }
+            }
+            &.shape-2{
+                left: 80px;
+                top: 28%;
+                animation: moveupdown1 3s infinite linear;
+                @media #{$tablet-device} {
+                    left: 20px;
+                    top: 24%;
+                    & img {
+                        width: 70%;
+                    }
+                }
+                @media #{$large-mobile} {
+                    display: none;
+                }
+            }
+        }
+    }
+}

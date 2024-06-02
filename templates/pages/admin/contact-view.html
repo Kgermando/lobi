@@ -1,0 +1,30 @@
+{% extends 'layouts/base-admin.html' %}
+
+{% block content %}
+
+<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 my-3">
+
+    <div class="container">
+        <div class="d-flex justify-content-between">
+            <h1 class="h3 mb-3 fw-normal">Message de {{ contact.Fullname }}</h1>
+
+            <!-- <form action="/web/admin/contact-update" method="post">
+                <input type="text" id="id" name="id" value="{{ contact.ID }}" hidden>
+                <input type="text" id="is_read" name="is_read" value="{{ contact.is_read }}" hidden>
+                <button type="submit" class="btn btn-danger w-10 mb-3">
+
+                    {% if contact.is_read %}
+                    Marque comme Non Lu
+                    {% else %}
+                    Marque comme Lu
+                    {% endif %}
+
+                </button>
+            </form> -->
+        </div>
+        <h5>{{ contact.Email }}</h5>
+        <p class="paragraph">{{ contact.Message }}</p>
+    </div>
+
+</main>
+{% endblock content %}

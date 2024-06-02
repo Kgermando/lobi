@@ -1,0 +1,460 @@
+/*----------------------------------------*/
+/*  2.15 - Team Styles CSS
+/*----------------------------------------*/
+.team-bg{
+	background: rgba(50, 47, 179, 0.08);
+	background: linear-gradient(-38deg, rgba(50, 47, 179, 0.08) 0%, rgba(65, 125, 210, 0.08) 50%, rgba(91, 207, 242, 0.08) 100%);
+    & .heading-one{
+        text-align: center;
+        max-width: 520px;
+        width: 100%;
+        margin: 0 auto 80px;
+        @media #{$tablet-device} {
+            margin: 0 auto 60px;
+        }
+        @media #{$large-mobile} {
+            margin: 0 auto 40px;
+        }
+    }
+}
+
+.single-team{
+    position: relative;
+    padding-bottom: 100px;
+    &-image{
+        & img {
+            width: 100%;
+        }
+    }
+    &-content{
+        background-color: white;
+        box-shadow: 15px 11px 48px 0px rgba(0, 0, 0, 0.08);
+        padding: 25px 0 30px 0;
+        max-width: 220px;
+        width: 100%;
+        text-align: center;
+        border-radius: 10px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+        bottom: 0px;
+
+        & .name{
+            color: $dark;
+            font-size: 21px;
+            font-weight: 700;
+            transition: .3s;
+            &:hover{
+                color: $primary;
+                transition: .3s;
+            }
+        }
+        & .desig{
+            font-size: 16px;
+            font-family: $opensans;
+            font-weight: 400;
+            color: #717788;
+            display: block;
+            margin: 10px 0 0px;
+        }
+    }
+    &-social{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        height: 0;
+        transition: .3s;
+        & li {
+            opacity: 0;
+            visibility: hidden;
+            & a {
+                font-size: 18px;
+            }
+            &:nth-child(1){
+                transform: translateY(30px);
+                transition: .3s;
+            }
+            &:nth-child(2){
+                transform: translateY(30px);
+                transition: .4s;
+            }
+            &:nth-child(3){
+                transform: translateY(30px);
+                transition: .5s;
+            }
+        }
+    }
+    &:hover{
+        transition: .5s;
+        & .single-team-social{
+            height: 30px;
+            transition: .3s;
+            margin-top: 10px;
+            & li {
+                opacity: 1;
+                visibility: visible;
+                &:nth-child(1){
+                    transform: translateY(0px);
+                    transition: .3s;
+                }
+                &:nth-child(2){
+                    transform: translateY(0px);
+                    transition: .4s;
+                }
+                &:nth-child(3){
+                    transform: translateY(0px);
+                    transition: .5s;
+                }
+            }
+        }
+    }
+}
+
+/* Team Two Style */
+.team-two{
+    position: relative;
+    margin-bottom: 30px;
+    &_images{
+        position: relative;
+        z-index: 4;
+
+        & .image1{
+            left: -60px;
+            top: -25px;
+            position: relative;
+            @media #{$laptop-device} {
+                left: -20px;
+                top: -25px;
+            }
+            @media #{$desktop-device} {
+                left: -20px;
+                top: -25px;
+            }
+            @media #{$tablet-device} {
+                left: 40px;
+                top: -25px;
+            }
+            @media #{$large-mobile} {
+                left: 30px;
+            }
+            @media #{$small-mobile} {
+                width: 40%;
+            }
+        }
+        & .image2{
+            left: 30px;
+            top: 110px;
+            position: relative;
+            @media #{$laptop-device} {
+                left: 80px;
+                top: 110px;
+            }
+            @media #{$tablet-device} {
+                left: 90px;
+                top: 110px;
+            }
+            @media #{$large-mobile} {
+                left: 15px;
+            }
+            @media #{$small-mobile} {
+                width: 50%;
+            }
+        }
+        & .image3{
+            left: 15px;
+            top: 35px;
+            position: relative;
+            @media #{$laptop-device} {
+                left: 90px;
+                top: 35px;
+            }
+            @media #{$desktop-device} {
+                left: 60px;
+                top: 5px;
+            }
+            @media #{$tablet-device} {
+                left: 110px;
+                top: auto;
+                position: relative;
+                bottom: 0;
+            }
+            @media #{$large-mobile} {
+                left: 40px;
+                top: auto;
+                bottom: 0;
+            }
+            @media #{$small-mobile} {
+                width: 50%;
+            }
+        }
+        & .image4{
+            left: -40px;
+            top: -375px;
+            position: relative;
+            animation: zoom1 3s infinite linear;
+            @media #{$laptop-device} {
+                left: 12px;
+                top: -375px;
+            }
+            @media #{$tablet-device} {
+                left: 15px;
+                top: -375px;
+                position: relative;
+            }
+            @media #{$large-mobile} {
+                display: none;
+            }
+        }
+        & .image5{
+            right: 75%;
+            top: -85px;
+            position: relative;
+            animation: zoom1 3s infinite linear;
+            @media #{$laptop-device} {
+                right: 58%;
+                top: -85px;
+            }
+            @media #{$desktop-device} {
+                right: 70%;
+                top: -85px;
+            }
+            @media #{$tablet-device} {
+                right: 50%;
+                top: -85px;
+            }
+            @media #{$large-mobile} {
+                display: none;
+            }
+        }
+    }
+ 
+    & .heading-one{
+        z-index: 99;
+        position: relative;
+        &-title{
+            margin: 10px 0 40px;
+            @media #{$tablet-device, $large-mobile} {
+                margin: 10px 0 20px;
+            }
+        }
+        & p{
+            margin: 25px 0 65px;
+            @media #{$tablet-device} {
+                margin: 0px 0 50px;
+            }
+            @media #{$large-mobile} {
+                margin: 0px 0 40px;
+            }
+        }
+    }
+
+    &_shape{
+        position: absolute !important;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        & .shape{
+            position: absolute;
+        }
+        & .shape1{
+            left: 0px;
+            top: -170px;
+            z-index: -5;
+            @media #{$desktop-device} {
+                top: -97px;
+                width: 60%;
+            }
+            @media #{$tablet-device} {
+                left: 0px;
+                top: -60px;
+                width: 70%;
+            }
+            @media #{$large-mobile} {
+                display: none;
+            }
+        }
+        & .shape2{
+            top: 80px;
+            left: 140px;
+            @media #{$desktop-device} {
+                width: 58%;
+            }
+            @media #{$tablet-device} {
+                left: 80px;
+                top: 0px;
+                width: 75%;
+            }
+            @media #{$large-mobile} {
+                display: none;
+            }
+        }
+        & .shape3{
+            top: 60px;
+            left: 35px;
+            animation: moveupdown1 3s infinite linear;
+            @media #{$large-mobile} {
+                display: none;
+            }
+        }
+        & .shape4{
+            bottom: -24%;
+            right: 110px;
+            animation: moveupdown1 3s infinite linear;
+            @media #{$desktop-device} {
+                bottom: -8%;
+                right: 80px;
+            }
+            @media #{$tablet-device} {
+                bottom: 3%;
+                right: 25px;
+                width: 4%;
+            }
+            @media #{$large-mobile} {
+                display: none;
+            }
+        }
+        & .shape5{
+            bottom: -100px;
+            right: 215px;
+            animation: zoom1 3s infinite linear;
+            @media #{$desktop-device} {
+                bottom: 0px;
+                right: 181px;
+            }
+            @media #{$tablet-device} {
+                bottom: 50px;
+                right: 120px;
+                width: 6%;
+            }
+            @media #{$large-mobile} {
+                display: none;
+            }
+        }
+        & .shape6{
+            bottom: -43%;
+            right: 45px;
+            @media #{$desktop-device} {
+                bottom: -25%;
+                right: 20px;
+            }
+            @media #{$tablet-device} {
+                bottom: -2%;
+                right: 35px;
+                width: 15%;
+            }
+            @media #{$large-mobile} {
+                display: none;
+            }
+        }
+    }
+}
+
+/* Team Three Style */
+.team-three{
+    & .heading-one{
+        max-width: 600px;
+        width: 100%;
+        margin: 0 auto 80px;
+
+        @media #{$tablet-device} {
+            margin: 0 auto 50px;
+        }
+        @media #{$large-mobile} {
+            margin: 0 auto 40px;
+        }
+        &-subtitle{
+            display: block;
+            margin-bottom: 10px;
+        }
+    }
+
+    &-wrapper{
+        margin-bottom: -20px;
+        @media #{$tablet-device} {
+            margin-bottom: -40px;
+        }
+        @media #{$small-mobile} {
+            margin-bottom: -30px;
+        }
+        & .team-three-single{
+            margin-bottom: 30px;
+            @media #{$tablet-device} {
+                margin-bottom: 50px;
+            }
+            @media #{$small-mobile} {
+                margin-bottom: 20px;
+            }
+            &:nth-child(2n+2){
+                margin-top: 60px;
+                @media #{$tablet-device, $large-mobile} {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+
+    & .single-team-content {
+        padding: 35px 0 30px 0;
+        border-radius: 7px;
+        bottom: -10px;
+        @media #{$small-mobile} {
+            bottom: 15px;
+        }
+    }
+
+    & .shape{
+        height: 100%;
+        width: 100%;
+        position: absolute !important;
+        @media #{$tablet-device, $large-mobile} {
+            display: none;
+        }
+        & .shape1{
+            position: absolute;
+            left: 14%;
+            top: -11%;
+        }
+        & .shape2{
+            position: absolute;
+            left: 0%;
+            top: -19%;
+        }
+        & .shape3{
+            position: absolute;
+            left: 0%;
+            top: 3%;
+        }
+        & .shape4{
+            position: absolute;
+            right: 6%;
+            top: 10%;
+            @media #{$desktop-device} {
+                right: 2%;
+                top: 4%;
+            }
+        }
+        & .shape5{
+            position: absolute;
+            right: 9.7%;
+            top: 21%;
+            @media #{$desktop-device} {
+                top: 15%;
+            }
+        }
+        & .shape6{
+            position: absolute;
+            left: 4%;
+            bottom: 10%;
+        }
+        & .shape7{
+            position: absolute;
+            right: 7%;
+            bottom: 8%;
+            & img {
+                animation: zoom1 3s infinite linear;
+            }
+        }
+    }
+}
